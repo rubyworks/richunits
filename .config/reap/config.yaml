@@ -1,9 +1,16 @@
 ---
 
+test:
+  service: TestUnit
+
+rubygem:
+  service : Gem
+  exclude : [ log, pkg, web, doc/rdoc, doc/ri ]
+
 rubyforge:
-  service : Rubyforge
-  project : tigerops
-  groupid : 5881
-  package : richunits
-  webdir  : richunits
+  service  : Rubyforge
+  unixname : tigerops
+  groupid  : 5881
+  package  : richunits
+  sitemap  : richunits
 
