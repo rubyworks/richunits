@@ -1,0 +1,9 @@
+---
+
+rubyforge:
+  service : Rubyforge
+  project : tigerops
+  groupid : 5881
+  package : richunits
+  webdir  : richunits
+
