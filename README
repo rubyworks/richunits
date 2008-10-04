@@ -2,11 +2,50 @@
 
 Rich Kilmer's Units System
 
-= Development
+  http://richunits.rubyforge.org
+
+== Usage
+
+You only need to require 'rich_units' and all of RichUnit's
+extensions are loaded.
+
+  require 'rich_units'
+
+  2.hours  #=> 7200
+
+RichUnits all includes Matthew Harris' Duration class which
+is integrated into the rest of the unit system.
+
+See RDocs for complete API documentation.
+
+== Development
 
 GitHub Repository.
+
+  git://github.com/trans/rich_units.git
 
 This project uses the Reap build system.
 
   http://reap.rubyforge.org
+
+== TODO
+
+* Should we rename the Rubyforge project from richunits to rich_units?
+
+== Copying
+
+Copyright (c) 2008 TigerOps
+Copyright (c) 2006 Matthew Harris
+Copyright (c) 2004 Rich Kilmer
+
+If you have contributed to this code and feel you deserve mention
+in the copyright notice, please let us know. Since this code has
+been through a number of hands and other projects (Facets and
+ActiveSupport among them) it is hard to identify exactly who is
+responsible for what. Nonetheless, Rich Kilmer is the father of
+this code so most of the rights must fall to him.
+
+RichUnits is distributed under the terms of the MIT license.
+
+See COPYING file.
 
