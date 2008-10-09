@@ -1,53 +1,65 @@
-# = Weekdays
-#
-# The Weekdays class provides useful weekday terminology.
+module RichUnits
 
-class Weekdays
+  # = Weekdays
+  #
+  # The Weekdays class provides useful weekday terminology.
 
-  WEEKDAYS = 1..5 # Monday is wday 1
-  ONE_DAY  = 60 * 60 * 24
+  class Weekdays
 
-  def initialize(n)
-    @n = n
-  end
+    WEEKDAYS = 1..5 # Monday is wday 1
+    ONE_DAY  = 60 * 60 * 24
 
-  def ago(time = ::Time.now)
-    step :down, time
-  end
-  alias_method :until, :ago
-  alias_method :before, :ago
-
-  def since(time = ::Time.now)
-    step :up, time
-  end
-  alias_method :from_now, :since
-  alias_method :after, :since
-
-  private
-
-  def step(direction, original_time)
-    result = original_time
-    time = ONE_DAY
-
-    compare = direction == :up ? ">" : "<"
-    time *= -1 if direction == :down
-
-    @n.times do
-      result += time until result.send(compare, original_time) && WEEKDAYS.member?(result.wday)
-      original_time = result
+    def initialize(n)
+      @n = n
     end
-    result
-  end
-end
 
-class Numeric
+    def ago(time = ::Time.now)
+      step :down, time
+    end
+    alias_method :until, :ago
+    alias_method :before, :ago
 
-  # Works with day in terms of weekdays.
-  def weekdays
-    Weekdays.new(self)
-  end
+    def since(time = ::Time.now)
+      step :up, time
+    end
+    alias_method :from_now, :since
+    alias_method :after, :since
 
-  alias_method :weekday, :weekdays
+    private
 
+    def step(direction, original_time)
+      result = original_time
+      time = ONE_DAY
+
+      compare = direction == :up ? ">" : "<"
+      time *= -1 if direction == :down
+
+      @n.times do
+        result += time until result.send(compare, original_time) && WEEKDAYS.member?(result.wday)
+        original_time = result
+      end
+      result
+    end
+
+    # = Numeric Weekday Extensions
+    #
+    module Numeric
+
+      # Works with day in terms of weekdays.
+      def weekdays
+        Weekdays.new(self)
+      end
+
+      alias_method :weekday, :weekdays
+
+    end#module Numeric
+
+  end#class Weekdays
+
+end#module RichUnits
+
+
+class Numeric #:nodoc:
+  include RichUnits::Weekdays::Numeric
 end
 
