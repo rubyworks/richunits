@@ -44,15 +44,16 @@ module RichUnits
       "<#{self.class} %s %s %s %s %s>" % to_a
     end
 
-    def to_i    ; @seconds ; end
+    def to_i ; @seconds.to_i ; end
+    def to_f ; @seconds.to_f ; end
 
     def to_a
       s = @seconds
-      #y, s = *s.divmod YEAR
-      #w, s = *s.divmod WEEK
-      d, s = *s.divmod DAY
-      h, s = *s.divmod HOUR
-      m, s = *s.divmod MINUTE
+      #y, s = *s.divmod(YEAR)
+      #w, s = *s.divmod(WEEK)
+      d, s = *s.divmod(DAY)
+      h, s = *s.divmod(HOUR)
+      m, s = *s.divmod(MINUTE)
       [d, h, m, s]
     end
 
@@ -63,6 +64,24 @@ module RichUnits
     def to_s
       "%s days, %s hours, %s minutes and %s seconds" % to_a
     end
+
+    # Returns true if <tt>other</tt> is also a Duration instance with the
+    # same <tt>value</tt>, or if <tt>other == value</tt>.
+    def ==(other)
+      if Duration === other
+        other.seconds == seconds
+      else
+        other == seconds
+      end
+    end
+
+    #def is_a?(klass) #:nodoc:
+    #  klass == self.class
+    #end
+  
+    #def self.===(other) #:nodoc:
+    #  other.is_a?(Duration) rescue super
+    #end
 
     #
     def segmented(*segments)
@@ -132,27 +151,29 @@ module RichUnits
         end.gsub('%%', '%')
     end
 
+    #
     def -@ #:nodoc:
       self.class.new(-@seconds)
     end
 
-    # Returns true if <tt>other</tt> is also a Duration instance with the
-    # same <tt>value</tt>, or if <tt>other == value</tt>.
-    def ==(other)
-      if Duration === other
-        other.seconds == seconds
-      else
-        other == seconds
-      end
+    #
+    def +@ #:nodoc:
+      self.class.new(+@seconds)
     end
 
-    #def is_a?(klass) #:nodoc:
-    #  klass == self.class
-    #end
-  
-    #def self.===(other) #:nodoc:
-    #  other.is_a?(Duration) rescue super
-    #end
+    #
+    # Need to wrap back to numeric methods, maybe use method_missing?
+    #
+
+    #
+    def before(time)
+      @seconds.before(time)
+    end
+
+    #
+    def after(time)
+      @seconds.after(time)
+    end
 
     # = Numeric Extensions for Durations
     #
