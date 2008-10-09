@@ -154,7 +154,12 @@ module RichUnits
       end
 
       alias_method :in, :hence
+
+      # This is a Railism.
       alias_method :since, :hence
+
+      # This is a Railism.
+      alias_method :from_now, :hence
 
       # Adjust DST
       #
