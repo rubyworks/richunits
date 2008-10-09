@@ -5,8 +5,8 @@
 }
 
 body {
-  color       : black;
-  background  : white;
+  color       : white;
+  background  : black;
   text-align  : center;
   position    : relative;
   font-size   : 10px;
@@ -15,7 +15,7 @@ body {
 p {
   text-align  : justify;
   font-size   : 12px;
-  color       : #111111;
+  color       : #aaaaaa;
   font-weight : normal;
   margin      : 10px 0px 10px 0px;
   line-height : 1.5em;
@@ -31,10 +31,10 @@ img {
 
 pre {
   font-family  : monospace;
-  color        : #F00060;
-  background   : #efefef;
+  font-size    : 8pt;
+  color        : #eeeeee;
+  background   : #1f0f0f;
   margin       : 10px;
-  font-size    : 0.9em;
   font-weight  : bold;
   line-height  : 1.5em;
   padding-top  : 15px;
@@ -61,23 +61,21 @@ td {
 }
 
 .container {
-  width        : 1000px;
+  width        : 900px;
   margin       : 0 auto;
   position     : relative;
 }
 
-.master {
-  background: white;
-  border: 0px solid #999999;
-}
 
 .aside {
+  float: right;
   width: 164px;
   padding: 20px;
+  margin: 40px;
   text-align: center;
-  background: white;
-  border: 1px solid #dddddd;
-  margin-top: 20px;
+  background: black;
+  border: 1px solid gray;
+  margin-top: 40px;
 }
 
 .aside a {
@@ -90,15 +88,16 @@ td {
 }
 
 .header {
-  padding: 90px 0px;
-  background: url(img/ruby-md.png) center no-repeat white;
-  text-align: center;
+  padding: 70px 40px 50px 60px;
+  background: url(img/ruby-md.png) 500px 30px no-repeat #111111;
+  text-align: left;
   font-weight: bold;
   margin-bottom: 20px;
+  border: 1px solid gray;
 }
 
 .title {
-  color: red;
+  color: white;
   font-size: 100px;
 }
 
@@ -108,9 +107,7 @@ td {
 }
 
 .content {
-  background: white;
-  margin: 10px;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .about {
@@ -119,15 +116,17 @@ td {
   text-align: justify;
   font-size: 24pt;
   font-weight: bold;
-  background: #DF0020;
+  background: #BF0020;
   color: white;
 }
 
 .menu {
-  padding        : 5px 10px;
+  width          : 900px;
+  margin         : 0 auto;
+  padding        : 15px 30px;
   color          : orange;
   font-size      : 12px;
-  text-align     : center;
+  text-align     : left;
 }
 
 .menu a {
@@ -164,6 +163,8 @@ td {
   text-align  : center;
   color       : gray;
   font-size   : 1.2em;
-  border: 1px solid #dddddd;
+  border      : 1px solid gray;
+  background  : #111111;
+  margin      : 20px 1px;
 }
 
