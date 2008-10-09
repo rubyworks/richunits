@@ -1,0 +1,9 @@
+
+* Achieve 99.9% drop-in compatability with ActiveSupport.
+
+* So I guess that means Duration must replace the use of Integer seconds.
+
+* Better TimeZone support.
+
+* Is the package name better as richunits or rich_units?
+

@@ -1,3 +1,11 @@
+=== 0.3.0 / 2008-09-08
+
+* Encapsulated entire library in RichUnits module.
+
+=== 0.2.0 / 2008-08-01
+
+* Reorganized repository.
+
 === 0.1.0 / 2008-03-27
 
 * Initial version.

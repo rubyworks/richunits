@@ -1,3 +1,9 @@
-This is the initial standalone release of the Rich Kilmer's Units
-system, spun out of Facets and ActiveSupport.
+This new release encapsulates everything in the
+RichUnits namespace.
+
+---
+
+### 0.3.0 / 2008-09-08
+
+* Encapsulated entire library in RichUnits module.
 
