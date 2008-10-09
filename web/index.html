@@ -5,7 +5,7 @@
   <title>Rich Units</title>
 
   <link href="style.css" rel="stylesheet" type="text/css"/>
-  <link href="img/ruby-sm.png" rel="icon"/>
+  <link href="images/ruby-sm.png" rel="icon"/>
 
   <META NAME="DESCRIPTION" CONTENT="Rich Units system for the Ruby programming lanaguage.">
   <META NAME="KEYWORDS" CONTENT="units, ruby, numeric, time">
@@ -16,10 +16,10 @@
 <div class="aside">
 
   <div class="tiger" style="padding-top: 10px;">
-    <img src="img/tiger-sm.png"/>
+    <img src="images/tiger-sm.png"/>
 
     <a href="http://tigerops.psytower.info">
-      <img src="img/tiger_logo.png" width="150px" align="top"/>
+      <img src="images/tiger_logo.png" width="150px" align="top"/>
     </a>
 
     <p>All ad revenues go toward the creation of open source software!</p>
@@ -86,18 +86,22 @@
       Rich Kilmer's Units System is the most widely used in all of Rubyland.
     </p>
 
-    <p>Rich Units is a straight-forward units system originally developed by Rich Kilmer.
+    <p class="intro">Rich Units is a straight-forward units system originally developed by Rich Kilmer.
        Rich Units extends core Ruby with conveneice methods for dealing with
        measures. The methods work by converting those measures to a low common 
-       denominator; for instance all times are stored in seconds.
+       denominator; for instance all durations are stored in seconds.
     </p>
 
-    <p>Rich Units provides the same unit system used by <a href="http://www.rubyonrails.org/">Ruby on Rails</a>*.
-       In addition, Rich Units provides a superset of functionality derived from the
-       <a href="facets.rubyforge.org">Ruby Facets</a> distribution of the same libraries.
+    <p class="intro">Rich Units provides essentially the same unit system used by <a href="http://www.rubyonrails.org/">Ruby on Rails</a>*.
+       But Rich Units seeks to imporve upon this code, and provides a superset of functionality, partly derived from the
+       <a href="facets.rubyforge.org">Ruby Facets</a> distribution of the same libraries. Ultimately Rich Units provides
+       a better system than either of these collosal projects can provide, by virture of its dedicated development as a 
+       separate library.
     </p>
 
     <p><span style="font-size:0.8em;"> *with the exception of the timezone extensions (coming soon).</span></p>
+
+    <hr/>
 
     <h2>Examples</h2>
 
@@ -132,12 +136,18 @@
     </p>
 
     <pre>
-      sudo gem install rich_units
+      $ sudo gem install rich_units
     </pre>
 
     <p>
       Manual site_ruby installation is provided via <a href="http://setup.rubyforge.org">Ruby Setup</a>.
     </p>
+
+    <pre>
+      $ tar -xvzf rich_units-0.4.0.tgz
+      $ cd rich_units-0.4.0
+      $ sudo setup.rb all
+    </pre>
 
 
     <h2>Development</h2>
