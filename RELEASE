@@ -1,9 +1,8 @@
-This new release encapsulates everything in the
-RichUnits namespace.
+This release contains a complete rewrite of the Duration
+class and integrates it into the rest of the system.
 
----
 
-### 0.3.0 / 2008-09-08
+### 0.4.0 / 2008-09-09
 
-* Encapsulated entire library in RichUnits module.
+* Rewrote Duration class and integrated into rest of system.
 

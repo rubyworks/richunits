@@ -1,3 +1,7 @@
+=== 0.4.0 / 2008-09-09
+
+* Rewrote Duration class and integrated into rest of system.
+
 === 0.3.0 / 2008-09-08
 
 * Encapsulated entire library in RichUnits module.
