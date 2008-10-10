@@ -3,66 +3,92 @@ module RichUnits
   class Duration
     include Comparable
 
-    MINUTE =  60
+    SECOND =   1
+    MINUTE =  60 * SECOND
     HOUR   =  60 * MINUTE
     DAY    =  24 * HOUR
     WEEK   =   7 * DAY
     YEAR   = 365 * DAY
 
-    def self.[](seconds)
-      new(seconds)
+    SEGMENTS = %w{years weeks days hours minutes seconds}.collect{ |s| s.to_sym }
+
+    #
+    def self.[](seconds, *segments)
+      new(seconds, *segments)
     end
 
-    def initialize(seconds=0)
+    #
+    def initialize(seconds=0, *segments)
       @seconds = seconds.to_i
+      reset_segments(*segments)
     end
 
-    def years   ; @seconds / YEAR   ; end
-    def weeks   ; @seconds / WEEK   ; end
-    def days    ; @seconds / DAY    ; end
-    def hours   ; @seconds / HOUR   ; end
-    def minutes ; @seconds / MINUTE ; end
-    def seconds ; @seconds          ; end
+    #
+    def segments; @segments; end
 
-    def +(other)
-      self.class.new(@seconds + other.to_i)
-    end
-
-    def -(other)
-      self.class.new(@seconds - other.to_i)
-    end
-
-    def +(other)
-      self.class.new(@seconds * other.to_i)
-    end
-
-    def /(other)
-      self.class.new(@seconds / other.to_i)
+    #
+    def reset_segments(*segments)
+      case segments.size
+      when 0
+        @segments = [:days, :hours, :minutes, :seconds]
+      when 1
+        case segments = segments[0]
+        when Array
+          @segments = segments.collect{ |p| (p.to_s.downcase.chomp('s') + 's').to_sym }
+          raise ArgumentError unless @segments.all?{ |s| SEGMENTS.include?(s) }
+        else
+          f = SEGMENTS.index(segments)
+          @segments = SEGMENTS[f..0]
+        end
+      when 2
+        f = SEGMENTS.index(segments[0])
+        t = SEGMENTS.index(segments[1])
+        @segments = SEGMENTS[f..t]
+      else
+        raise ArgumentError
+      end
     end
 
     def inspect
-      "<#{self.class} %s %s %s %s %s>" % to_a
+      h = to_h
+      segments.reverse.collect do |l|
+        "#{h[l.to_sym]} #{l}"
+      end.join(' ')
     end
 
     def to_i ; @seconds.to_i ; end
     def to_f ; @seconds.to_f ; end
 
+    public
+
     def to_a
-      s = @seconds
-      #y, s = *s.divmod(YEAR)
-      #w, s = *s.divmod(WEEK)
-      d, s = *s.divmod(DAY)
-      h, s = *s.divmod(HOUR)
-      m, s = *s.divmod(MINUTE)
-      [d, h, m, s]
+      a, s = [], @seconds
+      a[5], s = *s.divmod(YEAR)   if @segments.include?(:years)
+      a[4], s = *s.divmod(WEEK)   if @segments.include?(:weeks)
+      a[3], s = *s.divmod(DAY)    if @segments.include?(:days)
+      a[2], s = *s.divmod(HOUR)   if @segments.include?(:hours)
+      a[1], s = *s.divmod(MINUTE) if @segments.include?(:minutes)
+      a[0], s = *s.divmod(SECOND) if @segments.include?(:seconds)
+      a.compact.reverse
     end
 
+    #
     def to_h
-      [:days, :hours, :minutes, :seconds].zip(to_a)
+      h, s = {}, @seconds
+      h[:years],   s = *s.divmod(YEAR)   if @segments.include?(:years)
+      h[:weeks],   s = *s.divmod(WEEK)   if @segments.include?(:weeks)
+      h[:days],    s = *s.divmod(DAY)    if @segments.include?(:days)
+      h[:hours],   s = *s.divmod(HOUR)   if @segments.include?(:hours)
+      h[:minutes], s = *s.divmod(MINUTE) if @segments.include?(:minutes)
+      h[:seconds], s = *s.divmod(SECOND) if @segments.include?(:seconds)
+      h
     end
 
     def to_s
-      "%s days, %s hours, %s minutes and %s seconds" % to_a
+      h = to_h
+      segments.reverse.collect do |l|
+        "#{h[l.to_sym]} #{l}"
+      end.join(' ')
     end
 
     # Returns true if <tt>other</tt> is also a Duration instance with the
@@ -83,37 +109,44 @@ module RichUnits
     #  other.is_a?(Duration) rescue super
     #end
 
-    #
-    def segmented(*segments)
-      segments = segments.collect{ |p| p.to_s.downcase }
-      y,w,d,h,m,s = nil,nil,nil,nil,nil,@seconds
-      y, s = *s.divmod(YEAR)   if %[year   years  ].any?{ |c| segments.include?(p) }
-      w, s = *s.divmod(WEEK)   if %[week   weeks  ].any?{ |c| segments.include?(p) }
-      d, s = *s.divmod(DAY)    if %[day    days   ].any?{ |c| segments.include?(p) }
-      h, s = *s.divmod(HOUR)   if %[hour   hours  ].any?{ |c| segments.include?(p) }
-      m, s = *s.divmod(MINUTE) if %[minute minutes].any?{ |c| segments.include?(p) }
-      [y, w, d, h, m, s].compact
+    def years   ; to_h[:years]   ; end
+    def weeks   ; to_h[:weeks]   ; end
+    def days    ; to_h[:days]    ; end
+    def hours   ; to_h[:hours]   ; end
+    def minutes ; to_h[:minutes] ; end
+    def seconds ; to_h[:seconds] ; end
+
+    def total ; seconds ; end
+
+    def +(other)
+      self.class.new(@seconds + other.to_i, segments)
+    end
+
+    def -(other)
+      self.class.new(@seconds - other.to_i, segments)
+    end
+
+    def +(other)
+      self.class.new(@seconds * other.to_i, segments)
+    end
+
+    def /(other)
+      self.class.new(@seconds / other.to_i, segments)
     end
 
     #
-    def periods(max=:day)
-      max = max.to_s.downcase
-
-      level = 5 if %[year   years  ].any?{ |p| max == p }
-      level = 4 if %[week   weeks  ].any?{ |p| max == p }
-      level = 3 if %[day    days   ].any?{ |p| max == p }
-      level = 2 if %[hour   hours  ].any?{ |p| max == p }
-      level = 1 if %[minute minutes].any?{ |p| max == p }
-
-      h, s = {}, @seconds
-
-      h[:years],   s = *s.divmod(YEAR)   if level >= 5
-      h[:weeks],   s = *s.divmod(WEEK)   if level >= 4
-      h[:days],    s = *s.divmod(DAY)    if level >= 3
-      h[:hours],   s = *s.divmod(HOUR)   if level >= 2
-      h[:minutes], s = *s.divmod(MINUTE) if level >= 1
-      h[:seconds], s = *s.divmod(MINUTE) if level >= 1
-      h
+    def segmented(*segments)
+      self.class.new(@seconds, segments)
+      #segments = segments.collect{ |p| p.to_s.downcase.chomp('s') }
+      #y,w,d,h,m,s = nil,nil,nil,nil,nil,nil
+      #x = @seconds
+      #y, x = *x.divmod(YEAR)   if segments.include?('year')
+      #w, x = *x.divmod(WEEK)   if segments.include?('week')
+      #d, x = *x.divmod(DAY)    if segments.include?('day')
+      #h, x = *x.divmod(HOUR)   if segments.include?('hour')
+      #m, x = *x.divmod(MINUTE) if segments.include?('minute')
+      #s = x if segments.include?('second')
+      #[y, w, d, h, m, s].compact
     end
 
     # Format duration.
@@ -137,18 +170,20 @@ module RichUnits
     #     => "It's been 11 weeks!"
     #
     def strftime(fmt)
-        h =\
-        {'w' => @weeks  ,
-         'd' => @days   ,
-         'h' => @hours  ,
-         'm' => @minutes,
-         's' => @seconds,
-         't' => @total  ,
-         'x' => to_s}
-
-        fmt.gsub(/%?%(w|d|h|m|s|t|x)/) do |match|
-            match.size == 3 ? match : h[match[1..1]]
-        end.gsub('%%', '%')
+      h = to_h
+      hx = {
+       'y' => h[:years]  ,
+       'w' => h[:weeks]  ,
+       'd' => h[:days]   ,
+       'h' => h[:hours]  ,
+       'm' => h[:minutes],
+       's' => h[:seconds],
+       't' => total,
+       'x' => to_s 
+      }
+      fmt.gsub(/%?%(w|d|h|m|s|t|x)/) do |match|
+        hx[match[1..1]]
+      end.gsub('%%', '%')
     end
 
     #
@@ -174,6 +209,7 @@ module RichUnits
     def after(time)
       @seconds.after(time)
     end
+
 
     # = Numeric Extensions for Durations
     #
@@ -215,7 +251,7 @@ module RichUnits
       # Converts years into seconds.
       # WARNING: This is not exact as it assumes 365 days to a year.
       #          ie. It doesn not account for leap years.
-      def years ; Duration[self * 365 * 86400] ; end
+      def years ; Duration[self * 365 * 86400, :years] ; end
       alias_method :year, :years
 
     end
