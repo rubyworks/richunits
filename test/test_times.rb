@@ -12,36 +12,37 @@ class TC_Times < Test::Unit::TestCase
   #end
 
   def test_seconds
-    assert_equal( 60**0, 1.seconds )
+    assert_equal( 60**0, 1.seconds.to_i )
   end
 
   def test_minutes
-    assert_equal( 60**1, 1.minutes )
+    assert_equal( 60**1, 1.minutes.to_i )
   end
 
   def test_hours
-    assert_equal( 60**2, 1.hours )
+    assert_equal( 60**2, 1.hours.to_i )
   end
 
   def test_days
-    assert_equal( 24*(60**2), 1.days )
+    assert_equal( 24*(60**2), 1.days.to_i )
   end
 
   def test_weeks
-    assert_equal( 7*24*(60**2), 1.weeks )
+    assert_equal( 7*24*(60**2), 1.weeks.to_i )
   end
 
   def test_fortnights
-    assert_equal( 14*24*(60**2), 1.fortnights )
+    assert_equal( 14*24*(60**2), 1.fortnights.to_i )
   end
 
   def test_months
-    assert_equal( 30*24*(60**2), 1.months )
+    assert_equal( 30*24*(60**2), 1.months.to_i )
   end
 
   def test_years
-    assert_equal( 365*24*(60**2), 1.years )
+    assert_equal( 365*24*(60**2), 1.years.to_i )
   end
+
 
   def test_before
     t = Time.now
