@@ -1,6 +1,6 @@
 = Rich Units
 
-Rich Kilmer's Units System
+Easy Units for Ruby
 
   http://richunits.rubyforge.org
 
@@ -13,8 +13,11 @@ extensions are loaded.
 
   2.hours  #=> 7200
 
-RichUnits all includes Matthew Harris' Duration class which
-is integrated into the rest of the unit system.
+RichUnits also includes a Duration class (inspired by Matthew Harris' version)
+for storing time measures. These measure were originally stored as Integer
+seconds. The Duration class instead stores the seconds as an attribute and
+adds a  an optional segements property which can be used to select exactly
+how to segment up the time period (years, week, days, etc.).
 
 See RDocs for complete API documentation.
 
