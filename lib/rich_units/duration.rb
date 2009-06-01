@@ -101,6 +101,10 @@ module RichUnits
       end
     end
 
+    def <=>(other)
+      @seconds <=> other.to_i
+    end
+
     #def is_a?(klass) #:nodoc:
     #  klass == self.class
     #end
@@ -256,11 +260,31 @@ module RichUnits
 
     end
 
+    # Time#duration has been added to convert the UNIX timestamp into a Duration.
+    # See Time#duration for an example.
+    #
+    module Time
+      # Create a Duration object from the UNIX timestamp.
+      #
+      # *Example*
+      #
+      #   Time.now.duration
+      #   => #<Duration: 1898 weeks, 6 days, 1 hour, 12 minutes and 1 second>
+      #
+      def duration
+        Duration[to_i]
+      end
+    end
+
   end
 
 end
 
 class Numeric #:nodoc:
   include RichUnits::Duration::Numeric
+end
+
+class Time #:nodoc:
+  include RichUnits::Duration::Time
 end
 
