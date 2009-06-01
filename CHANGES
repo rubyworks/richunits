@@ -1,3 +1,7 @@
+=== 0.5.0 / 2009-05-30
+
+* Name of gem and main require will be 'richunits' (no underscore).
+
 === 0.4.0 / 2008-09-09
 
 * Rewrote Duration class and integrated into rest of system.
