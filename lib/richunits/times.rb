@@ -35,8 +35,8 @@
 
 #
 module RichUnits
-  require 'rich_units/weekdays'
-  require 'rich_units/duration'
+  require 'richunits/weekdays'
+  require 'richunits/duration'
 
   # = Times
   #
