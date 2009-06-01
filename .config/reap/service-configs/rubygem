@@ -1,0 +1,6 @@
+---
+rubygem:
+  service: Gem
+  include: [ bin, doc, lib, meta, test, "[A-Z]*" ]
+  exclude: [ doc/ri, doc/rdoc ]
+
