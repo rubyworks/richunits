@@ -1,4 +1,4 @@
-require 'rich_units/bytes.rb'
+require 'richunits/bytes'
 require 'test/unit'
 
 class TC_Numeric < Test::Unit::TestCase

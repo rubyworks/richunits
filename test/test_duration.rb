@@ -1,5 +1,5 @@
+require 'richunits/duration'
 require 'test/unit'
-require 'rich_units'
 
 class TestDuration < Test::Unit::TestCase
 

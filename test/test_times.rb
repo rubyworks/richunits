@@ -1,4 +1,4 @@
-require 'rich_units/times.rb'
+require 'richunits/times'
 require 'test/unit'
 
 class TC_Times < Test::Unit::TestCase

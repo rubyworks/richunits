@@ -1,4 +1,4 @@
-require 'rich_units/multipliers.rb'
+require 'richunits/multipliers'
 require 'test/unit'
 
 class TC_Multipliers < Test::Unit::TestCase
