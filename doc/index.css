@@ -5,8 +5,8 @@
 }
 
 body {
-  color       : white;
-  background  : black;
+  color       : black;
+  background  : white;
   text-align  : center;
   position    : relative;
   font-size   : 10px;
@@ -15,18 +15,20 @@ body {
 p {
   text-align  : justify;
   font-size   : 12px;
-  color       : #aaaaaa;
+  color       : #555;
   font-weight : normal;
   margin      : 10px 0px 10px 0px;
   line-height : 1.5em;
   letter-spacing: 1px;
 }
 
+/*
 p.intro {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: normal;
   letter-spacing: 1px;
 }
+*/
 
 a {
   color: #EF0040;
@@ -68,7 +70,7 @@ td {
 }
 
 .container {
-  width        : 900px;
+  width        : 730px;
   margin       : 0 auto;
   position     : relative;
 }
@@ -104,8 +106,7 @@ td {
 }
 
 .title {
-  color: white;
-  font-size: 100px;
+  color: white; font-size: 62px;
 }
 
 .subtitle {
@@ -114,21 +115,22 @@ td {
 }
 
 .content {
-  padding: 20px 0;
+  padding: 0 0;
 }
 
 .about {
   margin: 0 0 20px 0;
   padding: 20px;
   text-align: justify;
-  font-size: 24pt;
+  font-size: 20pt;
   font-weight: bold;
   background: #BF0020;
   color: white;
+  border: 1px solid pink;
 }
 
 .menu {
-  width          : 900px;
+  width          : 730px;
   margin         : 0 auto;
   padding        : 15px 30px;
   color          : orange;
