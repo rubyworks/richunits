@@ -31,10 +31,6 @@ This project uses the Reap build system.
 
   http://reap.rubyforge.org
 
-== TODO
-
-* Should we rename the Rubyforge project from richunits to rich_units?
-
 == Copying
 
 Copyright (c) 2008 TigerOps
@@ -45,8 +41,8 @@ If you have contributed to this code and feel you deserve mention
 in the copyright notice, please let us know. Since this code has
 been through a number of hands and other projects (Facets and
 ActiveSupport among them) it is hard to identify exactly who is
-responsible for what. Nonetheless, Rich Kilmer is the father of
-this code so most of the rights must fall to him.
+responsible for what. Nonetheless, Rich Kilmer is the initiator
+of the whole idea, so I figure much of the rights belong to him.
 
 RichUnits is distributed under the terms of the MIT license.
 
