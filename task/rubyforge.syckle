@@ -1,5 +1,6 @@
 ---
 rubyforge:
+  active   : false
   service  : Rubyforge
   unixname : richunits
   groupid  : 7034

@@ -1,48 +1,62 @@
-= Rich Units
+= RichUnits
 
 Easy Units for Ruby
 
-  http://richunits.rubyforge.org
+* http://rubyworks.github.com/richunits/
+* http://richunits.rubyforge.org/ (old site)
 
-== Usage
 
-You only need to require 'rich_units' and all of RichUnit's
-extensions are loaded.
+== DESCRIPTION:
+
+RichUnits is simple units system based on Rich Kilmer's original
+time.rb script, in which different measures of time are represented
+as seconds via extensions to the Numeric class. Later, Ruby on Rails'
+ActiveSupport library adopted this script and expanded upon it.
+RichUnits borrows from their work and a few other renditions this code
+that have made the rounds to create a robust stand-alone version.
+
+Unique to RichUnits' rendition is the Duration class (inspired by Matthew
+Harris' version by the same name). Originally time measures were stored as
+integers representing seconds. The Duration class instead stores the seconds
+as an attribute and adds an optional segements property which can be used to
+select exactly how to segment up the time period (years, week, days, etc.).
+
+
+== SYNOPSIS:
+
+You only need to require 'richunits' and all of RichUnit's functionality
+becomes available.
 
   require 'richunits'
 
   2.hours  #=> 7200
 
-RichUnits also includes a Duration class (inspired by Matthew Harris' version)
-for storing time measures. These measure were originally stored as Integer
-seconds. The Duration class instead stores the seconds as an attribute and
-adds a  an optional segements property which can be used to select exactly
-how to segment up the time period (years, week, days, etc.).
-
 See RDocs for complete API documentation.
 
-== Development
 
-GitHub Repository.
+== DEVELOPMENT:
 
-  git://github.com/trans/richunits.git
+RichUnits utilizes GitHub for development. You will find the git 
+repo under the rubyworks account.
 
-This project uses the Reap build system.
+  git://github.com/rubyworks/richunits.git
 
-  http://reap.rubyforge.org
+RichUnits utilizes the Syckle build system.
 
-== Copying
 
-Copyright (c) 2008 TigerOps
+== COPYRIGHTS:
+
+Copyright (c) 2008 Thomas Sawyer
 Copyright (c) 2006 Matthew Harris
 Copyright (c) 2004 Rich Kilmer
 
 If you have contributed to this code and feel you deserve mention
-in the copyright notice, please let us know. Since this code has
+in the copyright notice, please let me know. Since this code has
 been through a number of hands and other projects (Facets and
 ActiveSupport among them) it is hard to identify exactly who is
 responsible for what. Nonetheless, Rich Kilmer is the initiator
-of the whole idea, so I figure much of the rights belong to him.
+of the whole idea (AFAIK), so I figure much of the rights belong
+to him.
 
 RichUnits is distributed under the terms of the MIT license.
 
