@@ -54,6 +54,21 @@ class TC_Times < Test::Unit::TestCase
     assert_equal( t + 1.day, 1.day.after(t) )
   end
 
+  #
+
+  def test_addition
+    assert_equal(11.minutes, 10.minutes + 1.minute)
+    assert_equal(11.minutes.to_i, (10.minutes + 1.minute).to_i)
+
+    assert_equal(11.minutes, 10.minutes + 60.seconds)
+    assert_equal(11.minutes.to_i, (10.minutes + 60.seconds).to_i)
+  end
+
+  def test_multiplication
+    assert_equal(20.minutes, 10.minutes * 2)
+    assert_equal(20.minutes.to_i, (10.minutes * 2).to_i)
+  end
+
 end
 
 class WeekdaysTest < Test::Unit::TestCase
