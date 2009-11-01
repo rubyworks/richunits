@@ -4,4 +4,4 @@ box:
   types  : [ gz, gem ]
   include: [ bin, lib, meta, test, "[A-Z]*" ]
   exclude: [ doc/ri, doc/rdoc ]
-
+  master : true
