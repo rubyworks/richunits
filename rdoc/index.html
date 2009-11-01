@@ -1,0 +1,1311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+  <title>RichUnits</title>
+
+  <link rel="SHORTCUT ICON" href="assets/img/ruby.png">
+
+  <link type="text/css" rel="stylesheet" href="assets/css/rdoc.css" media="screen" />
+  <link type="text/css" rel="stylesheet" href="assets/js/github.css" title="GitHub" />
+
+  <script type="text/javascript" charset="utf-8" src="assets/js/jquery.js"></script>
+  <script type="text/javascript" charset="utf-8" src="assets/js/quicksearch.js"></script>
+  <script type="text/javascript" charset="utf-8" src="assets/js/darkfish.js"></script>
+  <script type="text/javascript" charset="utf-8" src="assets/js/highlight.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready( function() {
+      $('#documentation pre').wrapInner('<code></code>');
+      hljs.tabReplace = '    ';
+      hljs.initHighlightingOnLoad('ruby');
+
+	    hookSourceViews();
+	    hookDebuggingToggle();
+	    hookQuickSearch();
+	    highlightLocationTarget();
+
+	    $('ul.link-list a').bind( "click", highlightClickTarget );
+    });
+  </script>
+</head>
+<body class="indexpage">
+<div id="main">
+
+  
+  <div class="head">
+    <h1>
+      <img src="assets/img/project.png" align="absmiddle">&nbsp;
+      <a href="index.html">RichUnits</a>
+    </h1>
+  </div>
+
+  <div id="metadata">
+    <div id="project-metadata">
+
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Information</h3>
+        <ul>
+        
+          <li class="file"><a href="files/COPYING.html">COPYING</a></li>
+        
+          <li class="file"><a href="files/README.html">README</a></li>
+        
+          <li class="file"><a href="files/CHANGES.html">CHANGES</a></li>
+        
+          <li class="file"><a href="files/TODO.html">TODO</a></li>
+        
+          <li class="file"><a href="files/RELEASE.html">RELEASE</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class Index
+          <span class="search-toggle"><img src="assets/img/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li class="module"><a href="classes/RichUnits.html">RichUnits</a></li>
+        
+          <li class="module"><a href="classes/RichUnits/Bytes.html">RichUnits::Bytes</a></li>
+        
+          <li class="module"><a href="classes/RichUnits/Bytes/Numeric.html">RichUnits::Bytes::Numeric</a></li>
+        
+          <li class="class"><a href="classes/RichUnits/Duration.html">RichUnits::Duration</a></li>
+        
+          <li class="module"><a href="classes/RichUnits/Duration/Numeric.html">RichUnits::Duration::Numeric</a></li>
+        
+          <li class="module"><a href="classes/RichUnits/Duration/Time.html">RichUnits::Duration::Time</a></li>
+        
+          <li class="module"><a href="classes/RichUnits/Multiplers.html">RichUnits::Multiplers</a></li>
+        
+          <li class="module"><a href="classes/RichUnits/Multiplers/Numeric.html">RichUnits::Multiplers::Numeric</a></li>
+        
+          <li class="module"><a href="classes/RichUnits/Times.html">RichUnits::Times</a></li>
+        
+          <li class="module"><a href="classes/RichUnits/Times/Numeric.html">RichUnits::Times::Numeric</a></li>
+        
+          <li class="module"><a href="classes/RichUnits/Times/Time.html">RichUnits::Times::Time</a></li>
+        
+          <li class="module"><a href="classes/RichUnits/Times/TimeClass.html">RichUnits::Times::TimeClass</a></li>
+        
+          <li class="class"><a href="classes/RichUnits/Weekdays.html">RichUnits::Weekdays</a></li>
+        
+          <li class="module"><a href="classes/RichUnits/Weekdays/Numeric.html">RichUnits::Weekdays::Numeric</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      <!-- METHODS -->
+      <div id="methodindex-section" class="section project-section">
+        <h3 class="section-header">Method Index</h3>
+        <ul>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000001">::[]</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Weekdays</span>
+              <a href="classes/RichUnits/Weekdays.html#M000132">::new</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000002">::new</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000033">#*</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000028">#+</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000032">#-</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000036">#/</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000019">#<=></a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000018">#==</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000050">#after</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Numeric</span>
+              <a href="classes/RichUnits/Times/Numeric.html#M000105">#after</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Weekdays</span>
+              <a href="classes/RichUnits/Weekdays.html#M000138">#after</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Weekdays</span>
+              <a href="classes/RichUnits/Weekdays.html#M000133">#ago</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000006">#ago</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Numeric</span>
+              <a href="classes/RichUnits/Times/Numeric.html#M000104">#ago</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000084">#at_beginning_of_day</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000087">#at_beginning_of_month</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000071">#at_beginning_of_week</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000089">#at_beginning_of_year</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000083">#at_midnight</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000121">#atto</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000049">#before</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Weekdays</span>
+              <a href="classes/RichUnits/Weekdays.html#M000135">#before</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Numeric</span>
+              <a href="classes/RichUnits/Times/Numeric.html#M000098">#before</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000080">#beginning_of_day</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000086">#beginning_of_month</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000069">#beginning_of_week</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000088">#beginning_of_year</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000128">#bit</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Bytes::Numeric</span>
+              <a href="classes/RichUnits/Bytes/Numeric.html#M000142">#bit</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000129">#bits</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Bytes::Numeric</span>
+              <a href="classes/RichUnits/Bytes/Numeric.html#M000143">#bits</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000130">#byte</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Bytes::Numeric</span>
+              <a href="classes/RichUnits/Bytes/Numeric.html#M000144">#byte</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000131">#bytes</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Bytes::Numeric</span>
+              <a href="classes/RichUnits/Bytes/Numeric.html#M000145">#bytes</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000114">#centi</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000003">#change</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration::Numeric</span>
+              <a href="classes/RichUnits/Duration/Numeric.html#M000067">#day</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration::Numeric</span>
+              <a href="classes/RichUnits/Duration/Numeric.html#M000066">#days</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000022">#days</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000031">#days_ago</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::TimeClass</span>
+              <a href="classes/RichUnits/Times/TimeClass.html#M000097">#days_extrema</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000042">#days_hence</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000052">#days_since</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000113">#deci</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000100">#deka</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000017">#dst_adjustment</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration::Time</span>
+              <a href="classes/RichUnits/Duration/Time.html#M000082">#duration</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000094">#end_of_day</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000112">#exa</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000127">#exbi</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000120">#femto</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration::Numeric</span>
+              <a href="classes/RichUnits/Duration/Numeric.html#M000075">#fortnight</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration::Numeric</span>
+              <a href="classes/RichUnits/Duration/Numeric.html#M000074">#fortnights</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Weekdays</span>
+              <a href="classes/RichUnits/Weekdays.html#M000137">#from_now</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000016">#from_now</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Numeric</span>
+              <a href="classes/RichUnits/Times/Numeric.html#M000110">#from_now</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000124">#gibi</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000108">#giga</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000101">#hecto</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000011">#hence</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Numeric</span>
+              <a href="classes/RichUnits/Times/Numeric.html#M000107">#hence</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration::Numeric</span>
+              <a href="classes/RichUnits/Duration/Numeric.html#M000065">#hour</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration::Numeric</span>
+              <a href="classes/RichUnits/Duration/Numeric.html#M000061">#hours</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000024">#hours</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000030">#hours_ago</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000040">#hours_hence</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000013">#in</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000096">#in_day_range?</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000007">#inspect</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000122">#kibi</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000102">#kilo</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000063">#last_month</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000056">#last_year</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Numeric</span>
+              <a href="classes/RichUnits/Times/Numeric.html#M000115">#later</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000123">#mebi</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000103">#mega</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000117">#micro</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000081">#midnight</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000116">#milli</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration::Numeric</span>
+              <a href="classes/RichUnits/Duration/Numeric.html#M000060">#minute</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000025">#minutes</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration::Numeric</span>
+              <a href="classes/RichUnits/Duration/Numeric.html#M000059">#minutes</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000029">#minutes_ago</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000039">#minutes_hence</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000051">#minutes_since</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000070">#monday</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration::Numeric</span>
+              <a href="classes/RichUnits/Duration/Numeric.html#M000077">#month</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration::Numeric</span>
+              <a href="classes/RichUnits/Duration/Numeric.html#M000076">#months</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000035">#months_ago</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000044">#months_hence</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000054">#months_since</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000118">#nano</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000064">#next_month</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000072">#next_week</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000062">#next_year</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Bytes::Numeric</span>
+              <a href="classes/RichUnits/Bytes/Numeric.html#M000148">#octet_units</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000126">#pebi</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000111">#peta</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000119">#pico</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000005">#reset_segments</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration::Numeric</span>
+              <a href="classes/RichUnits/Duration/Numeric.html#M000058">#second</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000026">#seconds</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration::Numeric</span>
+              <a href="classes/RichUnits/Duration/Numeric.html#M000057">#seconds</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000023">#seconds_since_midnight</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000037">#segmented</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000004">#segments</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000000">#set</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Numeric</span>
+              <a href="classes/RichUnits/Times/Numeric.html#M000106">#since</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000048">#since</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Weekdays</span>
+              <a href="classes/RichUnits/Weekdays.html#M000136">#since</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000014">#since</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000085">#start_of_day</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000092">#start_of_day</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Weekdays</span>
+              <a href="classes/RichUnits/Weekdays.html#M000139">#step</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Bytes::Numeric</span>
+              <a href="classes/RichUnits/Bytes/Numeric.html#M000146">#strfbits</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Bytes::Numeric</span>
+              <a href="classes/RichUnits/Bytes/Numeric.html#M000147">#strfbytes</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000041">#strftime</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000125">#tebi</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Multiplers::Numeric</span>
+              <a href="classes/RichUnits/Multiplers/Numeric.html#M000109">#tera</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000010">#to_a</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000095">#to_end_of_day</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000009">#to_f</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000012">#to_h</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000008">#to_i</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000015">#to_s</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000093">#to_start_of_day</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000091">#tomorrow</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000027">#total</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Numeric</span>
+              <a href="classes/RichUnits/Times/Numeric.html#M000099">#until</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Weekdays</span>
+              <a href="classes/RichUnits/Weekdays.html#M000134">#until</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration::Numeric</span>
+              <a href="classes/RichUnits/Duration/Numeric.html#M000073">#week</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Weekdays::Numeric</span>
+              <a href="classes/RichUnits/Weekdays/Numeric.html#M000141">#weekday</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Weekdays::Numeric</span>
+              <a href="classes/RichUnits/Weekdays/Numeric.html#M000140">#weekdays</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000021">#weeks</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration::Numeric</span>
+              <a href="classes/RichUnits/Duration/Numeric.html#M000068">#weeks</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000034">#weeks_ago</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000043">#weeks_hence</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000053">#weeks_since</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration::Numeric</span>
+              <a href="classes/RichUnits/Duration/Numeric.html#M000079">#year</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration::Numeric</span>
+              <a href="classes/RichUnits/Duration/Numeric.html#M000078">#years</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Duration</span>
+              <a href="classes/RichUnits/Duration.html#M000020">#years</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000038">#years_ago</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000047">#years_hence</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000055">#years_since</a>
+            </li>
+          
+            <li class="method" style="clear: both;">
+              <span class="method-parent-aside">RichUnits::Times::Time</span>
+              <a href="classes/RichUnits/Times/Time.html#M000090">#yesterday</a>
+            </li>
+          
+        </ul>
+      </div>
+
+    </div>
+
+    <div id="validator-badges">
+      
+      <div style="float: right; margin-right: 5px;">
+        <a href="http://validator.w3.org/check/referer"><img src="assets/img/check.png" alt="[Validate]" height="16" width="16" />
+      </div>
+      Generated with <a href="http://github.com/proutils/webri">WebRI RedFish</a> 1.0.0
+      <br/><br/> 
+    </div>
+  </div>
+
+<!--
+  
+  
+  <h2>Files</h2>
+  <ul>
+    
+      <li class="file"><a href="files/CHANGES.html">CHANGES</a></li>
+    
+      <li class="file"><a href="files/COPYING.html">COPYING</a></li>
+    
+      <li class="file"><a href="files/README.html">README</a></li>
+    
+      <li class="file"><a href="files/RELEASE.html">RELEASE</a></li>
+    
+      <li class="file"><a href="files/TODO.html">TODO</a></li>
+    
+  </ul>
+  
+
+  <h2>Classes/Modules</h2>
+  <ul>
+    
+    <li class="module"><a href="classes/RichUnits.html">RichUnits</a></li>
+    
+    <li class="module"><a href="classes/RichUnits/Bytes.html">RichUnits::Bytes</a></li>
+    
+    <li class="module"><a href="classes/RichUnits/Bytes/Numeric.html">RichUnits::Bytes::Numeric</a></li>
+    
+    <li class="class"><a href="classes/RichUnits/Duration.html">RichUnits::Duration</a></li>
+    
+    <li class="module"><a href="classes/RichUnits/Duration/Numeric.html">RichUnits::Duration::Numeric</a></li>
+    
+    <li class="module"><a href="classes/RichUnits/Duration/Time.html">RichUnits::Duration::Time</a></li>
+    
+    <li class="module"><a href="classes/RichUnits/Multiplers.html">RichUnits::Multiplers</a></li>
+    
+    <li class="module"><a href="classes/RichUnits/Multiplers/Numeric.html">RichUnits::Multiplers::Numeric</a></li>
+    
+    <li class="module"><a href="classes/RichUnits/Times.html">RichUnits::Times</a></li>
+    
+    <li class="module"><a href="classes/RichUnits/Times/Numeric.html">RichUnits::Times::Numeric</a></li>
+    
+    <li class="module"><a href="classes/RichUnits/Times/Time.html">RichUnits::Times::Time</a></li>
+    
+    <li class="module"><a href="classes/RichUnits/Times/TimeClass.html">RichUnits::Times::TimeClass</a></li>
+    
+    <li class="class"><a href="classes/RichUnits/Weekdays.html">RichUnits::Weekdays</a></li>
+    
+    <li class="module"><a href="classes/RichUnits/Weekdays/Numeric.html">RichUnits::Weekdays::Numeric</a></li>
+    
+  </ul>
+
+  <h2>Methods</h2>
+  <ul>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000001">::[] &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Weekdays.html#M000132">::new &mdash; RichUnits::Weekdays</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000002">::new &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000033">#* &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000028">#+ &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000032">#- &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000036">#/ &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000019">#<=> &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000018">#== &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000050">#after &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Numeric.html#M000105">#after &mdash; RichUnits::Times::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Weekdays.html#M000138">#after &mdash; RichUnits::Weekdays</a></li>
+    
+      <li><a href="classes/RichUnits/Weekdays.html#M000133">#ago &mdash; RichUnits::Weekdays</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000006">#ago &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Numeric.html#M000104">#ago &mdash; RichUnits::Times::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000084">#at_beginning_of_day &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000087">#at_beginning_of_month &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000071">#at_beginning_of_week &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000089">#at_beginning_of_year &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000083">#at_midnight &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000121">#atto &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000049">#before &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Weekdays.html#M000135">#before &mdash; RichUnits::Weekdays</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Numeric.html#M000098">#before &mdash; RichUnits::Times::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000080">#beginning_of_day &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000086">#beginning_of_month &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000069">#beginning_of_week &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000088">#beginning_of_year &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000128">#bit &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Bytes/Numeric.html#M000142">#bit &mdash; RichUnits::Bytes::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000129">#bits &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Bytes/Numeric.html#M000143">#bits &mdash; RichUnits::Bytes::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000130">#byte &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Bytes/Numeric.html#M000144">#byte &mdash; RichUnits::Bytes::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000131">#bytes &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Bytes/Numeric.html#M000145">#bytes &mdash; RichUnits::Bytes::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000114">#centi &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000003">#change &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Duration/Numeric.html#M000067">#day &mdash; RichUnits::Duration::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Duration/Numeric.html#M000066">#days &mdash; RichUnits::Duration::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000022">#days &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000031">#days_ago &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/TimeClass.html#M000097">#days_extrema &mdash; RichUnits::Times::TimeClass</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000042">#days_hence &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000052">#days_since &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000113">#deci &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000100">#deka &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000017">#dst_adjustment &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Duration/Time.html#M000082">#duration &mdash; RichUnits::Duration::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000094">#end_of_day &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000112">#exa &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000127">#exbi &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000120">#femto &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Duration/Numeric.html#M000075">#fortnight &mdash; RichUnits::Duration::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Duration/Numeric.html#M000074">#fortnights &mdash; RichUnits::Duration::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Weekdays.html#M000137">#from_now &mdash; RichUnits::Weekdays</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000016">#from_now &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Numeric.html#M000110">#from_now &mdash; RichUnits::Times::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000124">#gibi &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000108">#giga &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000101">#hecto &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000011">#hence &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Numeric.html#M000107">#hence &mdash; RichUnits::Times::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Duration/Numeric.html#M000065">#hour &mdash; RichUnits::Duration::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Duration/Numeric.html#M000061">#hours &mdash; RichUnits::Duration::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000024">#hours &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000030">#hours_ago &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000040">#hours_hence &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000013">#in &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000096">#in_day_range? &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000007">#inspect &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000122">#kibi &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000102">#kilo &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000063">#last_month &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000056">#last_year &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Numeric.html#M000115">#later &mdash; RichUnits::Times::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000123">#mebi &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000103">#mega &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000117">#micro &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000081">#midnight &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000116">#milli &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Duration/Numeric.html#M000060">#minute &mdash; RichUnits::Duration::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000025">#minutes &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Duration/Numeric.html#M000059">#minutes &mdash; RichUnits::Duration::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000029">#minutes_ago &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000039">#minutes_hence &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000051">#minutes_since &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000070">#monday &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Duration/Numeric.html#M000077">#month &mdash; RichUnits::Duration::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Duration/Numeric.html#M000076">#months &mdash; RichUnits::Duration::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000035">#months_ago &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000044">#months_hence &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000054">#months_since &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000118">#nano &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000064">#next_month &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000072">#next_week &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000062">#next_year &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Bytes/Numeric.html#M000148">#octet_units &mdash; RichUnits::Bytes::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000126">#pebi &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000111">#peta &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000119">#pico &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000005">#reset_segments &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Duration/Numeric.html#M000058">#second &mdash; RichUnits::Duration::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000026">#seconds &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Duration/Numeric.html#M000057">#seconds &mdash; RichUnits::Duration::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000023">#seconds_since_midnight &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000037">#segmented &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000004">#segments &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000000">#set &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Numeric.html#M000106">#since &mdash; RichUnits::Times::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000048">#since &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Weekdays.html#M000136">#since &mdash; RichUnits::Weekdays</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000014">#since &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000085">#start_of_day &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000092">#start_of_day &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Weekdays.html#M000139">#step &mdash; RichUnits::Weekdays</a></li>
+    
+      <li><a href="classes/RichUnits/Bytes/Numeric.html#M000146">#strfbits &mdash; RichUnits::Bytes::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Bytes/Numeric.html#M000147">#strfbytes &mdash; RichUnits::Bytes::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000041">#strftime &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000125">#tebi &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Multiplers/Numeric.html#M000109">#tera &mdash; RichUnits::Multiplers::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000010">#to_a &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000095">#to_end_of_day &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000009">#to_f &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000012">#to_h &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000008">#to_i &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000015">#to_s &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000093">#to_start_of_day &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000091">#tomorrow &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000027">#total &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Numeric.html#M000099">#until &mdash; RichUnits::Times::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Weekdays.html#M000134">#until &mdash; RichUnits::Weekdays</a></li>
+    
+      <li><a href="classes/RichUnits/Duration/Numeric.html#M000073">#week &mdash; RichUnits::Duration::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Weekdays/Numeric.html#M000141">#weekday &mdash; RichUnits::Weekdays::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Weekdays/Numeric.html#M000140">#weekdays &mdash; RichUnits::Weekdays::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000021">#weeks &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Duration/Numeric.html#M000068">#weeks &mdash; RichUnits::Duration::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000034">#weeks_ago &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000043">#weeks_hence &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000053">#weeks_since &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Duration/Numeric.html#M000079">#year &mdash; RichUnits::Duration::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Duration/Numeric.html#M000078">#years &mdash; RichUnits::Duration::Numeric</a></li>
+    
+      <li><a href="classes/RichUnits/Duration.html#M000020">#years &mdash; RichUnits::Duration</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000038">#years_ago &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000047">#years_hence &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000055">#years_since &mdash; RichUnits::Times::Time</a></li>
+    
+      <li><a href="classes/RichUnits/Times/Time.html#M000090">#yesterday &mdash; RichUnits::Times::Time</a></li>
+    
+  </ul>
+-->
+
+  
+  <div id="documentation">
+    <h1><a href="../classes/RichUnits.html">RichUnits</a></h1>
+<p>
+Easy Units for Ruby
+</p>
+<ul>
+<li><a
+href="http://rubyworks.github.com/richunits/">rubyworks.github.com/richunits/</a>
+
+</li>
+<li><a href="http://richunits.rubyforge.org/">richunits.rubyforge.org/</a> (old
+site)
+
+</li>
+</ul>
+<h2>DESCRIPTION:</h2>
+<p>
+<a href="../classes/RichUnits.html">RichUnits</a> is simple units system
+based on Rich Kilmer&#8217;s original time.rb script, in which different
+measures of time are represented as seconds via extensions to the Numeric
+class. Later, Ruby on Rails&#8217; ActiveSupport library adopted this
+script and expanded upon it. <a
+href="../classes/RichUnits.html">RichUnits</a> borrows from their work and
+a few other renditions this code that have made the rounds to create a
+robust stand-alone version.
+</p>
+<p>
+Unique to RichUnits&#8217; rendition is the Duration class (inspired by
+Matthew Harris&#8217; version by the same name). Originally time measures
+were stored as integers representing seconds. The Duration class instead
+stores the seconds as an attribute and adds an optional segements property
+which can be used to select exactly how to segment up the time period
+(years, week, days, etc.).
+</p>
+<h2>SYNOPSIS:</h2>
+<p>
+You only need to require &#8216;richunits&#8217; and all of
+RichUnit&#8217;s functionality becomes available.
+</p>
+<pre>
+  require 'richunits'
+
+  2.hours  #=&gt; 7200
+</pre>
+<p>
+See RDocs for complete API documentation.
+</p>
+<h2>DEVELOPMENT:</h2>
+<p>
+<a href="../classes/RichUnits.html">RichUnits</a> utilizes GitHub for
+development. You will find the git repo under the rubyworks account.
+</p>
+<pre>
+  git://github.com/rubyworks/richunits.git
+</pre>
+<p>
+<a href="../classes/RichUnits.html">RichUnits</a> utilizes the Syckle build
+system.
+</p>
+<h2>COPYRIGHTS:</h2>
+<p>
+Copyright &#169; 2008 Thomas Sawyer Copyright &#169; 2006 Matthew Harris
+Copyright &#169; 2004 Rich Kilmer
+</p>
+<p>
+If you have contributed to this code and feel you deserve mention in the
+copyright notice, please let me know. Since this code has been through a
+number of hands and other projects (Facets and ActiveSupport among them) it
+is hard to identify exactly who is responsible for what. Nonetheless, Rich
+Kilmer is the initiator of the whole idea (AFAIK), so I figure much of the
+rights belong to him.
+</p>
+<p>
+<a href="../classes/RichUnits.html">RichUnits</a> is distributed under the
+terms of the MIT license.
+</p>
+<p>
+See <a href="COPYING.html">COPYING</a> file.
+</p>
+
+  </div>
+  
+
+</div>
+</body>
+</html>
+

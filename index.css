@@ -1,0 +1,179 @@
+* {
+  padding     : 0;
+  margin      : 0;
+  font-family : sans-serif;
+}
+
+body {
+  color       : black;
+  background  : white;
+  text-align  : center;
+  position    : relative;
+  font-size   : 10px;
+}
+
+p {
+  text-align  : justify;
+  font-size   : 12px;
+  color       : #555;
+  font-weight : normal;
+  margin      : 10px 0px 10px 0px;
+  line-height : 1.5em;
+  letter-spacing: 1px;
+}
+
+/*
+p.intro {
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+*/
+
+a {
+  color: #EF0040;
+}
+
+img {
+  border: none;
+}
+
+pre {
+  font-family  : monospace;
+  font-size    : 8pt;
+  color        : #eeeeee;
+  background   : #1f0f0f;
+  margin       : 10px;
+  font-weight  : bold;
+  line-height  : 1.5em;
+  padding-top  : 15px;
+  text-align   : left;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: left;
+  margin-top: 50px;
+}
+
+h3 {
+  text-align: left;
+  margin-top: 20px;
+}
+
+td {
+  vertical-align: top;
+}
+
+.container {
+  width        : 730px;
+  margin       : 0 auto;
+  position     : relative;
+}
+
+
+.aside {
+  float: left;
+  width: 164px;
+  padding: 20px;
+  margin: 40px;
+  text-align: center;
+  background: black;
+  border: 0px solid gray;
+  margin-top: 40px;
+}
+
+.aside a {
+  color: #EF0040;
+  font-weight: bold;
+}
+
+.aside p {
+  text-align: center;
+}
+
+.header {
+  padding: 70px 40px 50px 60px;
+  background: url(images/ruby-md.png) 500px 30px no-repeat #111111;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+}
+
+.title {
+  color: white; font-size: 62px;
+}
+
+.subtitle {
+  color: white;
+  font-size: 16px;
+}
+
+.content {
+  padding: 0 0;
+}
+
+.about {
+  margin: 0 0 20px 0;
+  padding: 20px;
+  text-align: justify;
+  font-size: 20pt;
+  font-weight: bold;
+  background: #BF0020;
+  color: white;
+  border: 1px solid pink;
+}
+
+.menu {
+  width          : 730px;
+  margin         : 0 auto;
+  padding        : 15px 30px;
+  color          : orange;
+  font-size      : 12px;
+  text-align     : left;
+}
+
+.menu a {
+  font-size: 1em;
+  font-weight: bold;
+  color: red;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.ad {
+  border      : 0px solid white;
+  text-align  : center;
+}
+
+.invert {
+  text-align   : left;
+  color        : white;
+  margin       : 0;
+  padding      : 15px 15px 15px 15px;
+  background   : black;
+}
+
+.invert p {
+  text-align   : left;
+  color        : white;
+}
+
+.copyright {
+  padding     : 5px;
+  text-align  : center;
+  color       : gray;
+  font-size   : 1.2em;
+  border      : 1px solid gray;
+  background  : #111111;
+  margin      : 20px 1px;
+}
+

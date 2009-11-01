@@ -1,0 +1,163 @@
+
+<html>
+
+<head>
+  <title>Rich Units</title>
+
+  <link href="index.css" rel="stylesheet" type="text/css"/>
+  <link href="images/ruby-sm.png" rel="icon"/>
+
+  <META NAME="DESCRIPTION" CONTENT="Rich Units system for the Ruby programming lanaguage.">
+  <META NAME="KEYWORDS" CONTENT="units, ruby, numeric, time">
+</head>
+
+<body>
+
+<div class="menu">
+  <div style="float: right; font-weight: bold;">A <a href="http://tigerops.org">TigerOps</a> PROJECT</div>
+  <!-- &lt;<a href="http://tigerops.rubyforge.org/">Homepage</a>&gt; -->
+  <a href="rdoc/index.html">Documentation</a> &middot;
+  <a href="http://rubyforge.org/frs/?group_id=7034">Download</a> &middot;
+  <a href="http://rubyforge.org/projects/richunits">Development</a>
+</div>
+
+<div class="container">
+
+  <div class="header">
+    <span class="title">Rich Units</span>
+  </div>
+
+  <div class="content">
+
+    <p class="about">
+      RichUnits is a very easy to use unit system for the Ruby programming language.
+      It is essentially the same system popularized by Ruby on Rails.
+    </p>
+
+    <h2>Introduction</h2>
+
+    <p class="intro">Rich Units is a straight-forward units system based-on the original time
+       units work by Rich Kilmer (circa 2002-2004). Rich Units extends core Ruby with conveneice
+       methods for dealing with measures. The methods work by converting those measures to a low
+       common denominator; for instance all durations are stored in seconds.
+    </p>
+
+    <p class="intro">Rich Units provides essentially the same unit system used by
+       <a href="http://www.rubyonrails.org/">Ruby on Rails</a>*. But Rich Units seeks to imporve
+       upon this code, and provides a superset of functionality, partly derived from the
+       <a href="facets.rubyforge.org">Ruby Facets</a> distribution of the same libraries. 
+       Ultimately Rich Units intent is to provide a better system than either of these large
+       projects can provide, by virture of a dedicated development track.
+    </p>
+
+    <p><span style="font-size:0.8em;"> *with the present exception of the timezone extensions (coming soon).</span></p>
+
+    <h2>Examples</h2>
+
+    <p>
+      Primarily Rich Units extends Numeric.
+      Here are some basic examples:
+    </p>
+
+    <pre>
+      require 'rich_units'
+
+      4.days.hence    #=> Tue Apr 01 08:04:17 -0400 2008
+      4.hours.ago     #=> Thu Mar 27 22:03:33 -0400 2008
+
+      10.bytes        #=> 80
+    </pre>
+
+    <p>Rich Units also extends Time.</p>
+
+    <pre>
+      require 'rich_units'
+
+      Time.now                   #=> Fri Mar 28 08:10:40 -0400 2008
+      Time.now.years_hence(4)    #=> Wed Mar 28 08:10:47 -0400 2012
+    </pre>
+
+
+    <h2>Installation</h2>
+
+    <p>
+      Installing the RubyGem is of course straight forward.
+    </p>
+
+    <pre>
+      $ sudo gem install rich_units
+    </pre>
+
+    <p>
+      Manual site_ruby installation is provided via <a href="http://setup.rubyforge.org">Ruby Setup</a>.
+    </p>
+
+    <pre>
+      $ tar -xvzf rich_units-0.4.0.tgz
+      $ cd rich_units-0.4.0
+      $ sudo setup.rb all
+    </pre>
+
+
+    <h2>Development</h2>
+
+    <p>You can use gitweb to browse the 'richunits' repository.</p>
+
+    <h3>Anonymous Repository Access</h3>
+
+    <p>To pull the 'richunits' repository anonymously, use:</p>
+
+    <pre>
+      git clone git://rubyforge.org/richunits.git
+    </pre>
+
+    <h3>Master Developer Repository Access</h3>
+
+    <p>Developers: You can push to the 'richunits' repository using:</p>
+
+    <pre>
+      gitosis@rubyforge.org:richunits.git
+    </pre>  
+
+    <p>Only project developers have access to this repository.
+       Please contact <b>transfire at gmail.com</b> if you'd like to join the development team.
+    </p>
+
+    <h3>Contributor Repository Access</h3>
+
+    <p>This project is also hosted on GitHub at</p>
+
+    <pre>
+      http://github.com/trans/richunits/tree/master
+    </pre>  
+  </div>
+
+  <br/><br/>
+
+  <div style="text-align: center; padding: 20px 0; border-top: 1px solid #ccc;">
+    <script type="text/javascript"><!--
+    google_ad_client = "pub-1126154564663472";
+    /* TIGER 728x90 10/28/08 */
+    google_ad_slot = "2386645975";
+    google_ad_width = 728;
+    google_ad_height = 90;
+    //-->
+    </script>
+    <script type="text/javascript"
+    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+    </script>
+    <!-- <iframe src="http://tigerops.org/assets/adverts/banner-900-1.html" scrolling="no"></frame> -->
+  </div>
+
+  <div class="copyright">
+    <br/><br/>
+    <span style="color: #EF0040;">Rich Units</span> Copyright (c) 2007, 2008 <a href="http://tigerops.org">Tiger Ops</a>
+    <br/><br/>
+    Rich Units is distributed under the terms of the MIT license. <br/>
+    <br/><br/>
+  </div>
+
+</div>
+
+</body>
+</html>

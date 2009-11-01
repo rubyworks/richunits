@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+  <title>Module: RichUnits::Duration::Numeric</title>
+
+  
+    <link rel="SHORTCUT ICON" href="../../../assets/img/module.png">
+  
+
+  <link type="text/css" rel="stylesheet" href="../../../assets/css/rdoc.css" media="screen" />
+  <link type="text/css" rel="stylesheet" href="../../../assets/js/github.css" title="GitHub" />
+
+  <script type="text/javascript" charset="utf-8" src="../../../assets/js/jquery.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../../../assets/js/quicksearch.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../../../assets/js/darkfish.js"></script>
+  <script type="text/javascript" charset="utf-8" src="../../../assets/js/highlight.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready( function() {
+      $('#documentation pre').wrapInner('<code></code>');
+      hljs.tabReplace = '    ';
+      hljs.initHighlightingOnLoad('ruby');
+
+	    hookSourceViews();
+	    hookDebuggingToggle();
+	    hookQuickSearch();
+	    highlightLocationTarget();
+
+	    $('ul.link-list a').bind( "click", highlightClickTarget );
+    });
+  </script>
+</head>
+<body class="module">
+<div id="main">
+
+  <div class="head">
+    <h1>
+      
+        <img src="../../../assets/img/module.png" align="absmiddle">&nbsp;
+      
+      <a href="../../../index.html">RichUnits</a>&nbsp;
+      <a href="/">RichUnits::Duration::Numeric</a>
+    </h1>
+  </div>
+
+  <div id="metadata">
+    <div id="project-metadata">
+
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li class="file"><a href="../../../files/lib/richunits/duration_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/richunits/duration.rb">lib/richunits/duration.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      <!-- What about Git info, or Hg info? This seems almost silly, albeit kind of cool. -->
+      <!-- TODO: generalize this for all SCMs -->
+
+      
+    </div>
+
+    <div id="class-metadata">
+
+      <!-- Parent Class -->
+      
+
+      <!-- Namespace Contents -->
+      
+
+      <!-- Method Quickref -->
+      
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li class="method"><a href="#M000067">#day</a></li>
+          
+          <li class="method"><a href="#M000066">#days</a></li>
+          
+          <li class="method"><a href="#M000075">#fortnight</a></li>
+          
+          <li class="method"><a href="#M000074">#fortnights</a></li>
+          
+          <li class="method"><a href="#M000065">#hour</a></li>
+          
+          <li class="method"><a href="#M000061">#hours</a></li>
+          
+          <li class="method"><a href="#M000060">#minute</a></li>
+          
+          <li class="method"><a href="#M000059">#minutes</a></li>
+          
+          <li class="method"><a href="#M000077">#month</a></li>
+          
+          <li class="method"><a href="#M000076">#months</a></li>
+          
+          <li class="method"><a href="#M000058">#second</a></li>
+          
+          <li class="method"><a href="#M000057">#seconds</a></li>
+          
+          <li class="method"><a href="#M000073">#week</a></li>
+          
+          <li class="method"><a href="#M000068">#weeks</a></li>
+          
+          <li class="method"><a href="#M000079">#year</a></li>
+          
+          <li class="method"><a href="#M000078">#years</a></li>
+          
+        </ul>
+      </div>
+      
+
+      <!-- Included Modules -->
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="../../../files/COPYING.html">COPYING</a></li>
+        
+          <li class="file"><a href="../../../files/README.html">README</a></li>
+        
+          <li class="file"><a href="../../../files/CHANGES.html">CHANGES</a></li>
+        
+          <li class="file"><a href="../../../files/TODO.html">TODO</a></li>
+        
+          <li class="file"><a href="../../../files/RELEASE.html">RELEASE</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class Index
+          <span class="search-toggle"><img src="../../../assets/img/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <!-- classpage.html : classes -->
+        <ul class="link-list">
+        
+          <li class="module"><a href="../../../classes/RichUnits.html">RichUnits</a></li>
+        
+          <li class="module"><a href="../../../classes/RichUnits/Bytes.html">RichUnits::Bytes</a></li>
+        
+          <li class="module"><a href="../../../classes/RichUnits/Bytes/Numeric.html">RichUnits::Bytes::Numeric</a></li>
+        
+          <li class="class"><a href="../../../classes/RichUnits/Duration.html">RichUnits::Duration</a></li>
+        
+          <li class="module"><a href="../../../classes/RichUnits/Duration/Numeric.html">RichUnits::Duration::Numeric</a></li>
+        
+          <li class="module"><a href="../../../classes/RichUnits/Duration/Time.html">RichUnits::Duration::Time</a></li>
+        
+          <li class="module"><a href="../../../classes/RichUnits/Multiplers.html">RichUnits::Multiplers</a></li>
+        
+          <li class="module"><a href="../../../classes/RichUnits/Multiplers/Numeric.html">RichUnits::Multiplers::Numeric</a></li>
+        
+          <li class="module"><a href="../../../classes/RichUnits/Times.html">RichUnits::Times</a></li>
+        
+          <li class="module"><a href="../../../classes/RichUnits/Times/Numeric.html">RichUnits::Times::Numeric</a></li>
+        
+          <li class="module"><a href="../../../classes/RichUnits/Times/Time.html">RichUnits::Times::Time</a></li>
+        
+          <li class="module"><a href="../../../classes/RichUnits/Times/TimeClass.html">RichUnits::Times::TimeClass</a></li>
+        
+          <li class="class"><a href="../../../classes/RichUnits/Weekdays.html">RichUnits::Weekdays</a></li>
+        
+          <li class="module"><a href="../../../classes/RichUnits/Weekdays/Numeric.html">RichUnits::Weekdays::Numeric</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+    </div>
+
+    <div id="validator-badges">
+      
+      <div style="float: right; margin-right: 5px;">
+        <a href="http://validator.w3.org/check/referer"><img src="../../../assets/img/check.png" alt="[Validate]" height="16" width="16" />
+      </div>
+      Generated with <a href="http://github.com/proutils/webri">WebRI Redfish</a> 1.0.0
+      <br/><br/>
+    </div>
+  </div>
+
+  <div id="documentation">
+
+    <div id="description">
+      
+
+      <h1><a href="Numeric.html">Numeric</a> Extensions for Durations</h1>
+
+    </div>
+
+    <!-- Constants -->
+    
+
+    <!-- Attributes -->
+    
+
+    <!-- Methods -->
+    
+    <div id="public-instance-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="day-method" class="method-detail method-alias">
+        <a name="M000067"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">day</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Alias for <a href="Numeric.html#M000066">days</a>
+</p>
+          
+
+          
+        </div>
+
+        
+      </div>
+
+    
+      <div id="days-method" class="method-detail ">
+        <a name="M000066"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">days</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Converts days into seconds.
+</p>
+          
+
+          
+          <div class="method-source-code"
+            id="days-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 249</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">days</span> ; <span class="ruby-constant">Duration</span>[<span class="ruby-keyword kw">self</span> <span class="ruby-operator">*</span> <span class="ruby-value">86400</span>] ; <span class="ruby-keyword kw">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="Numeric.html#M000067">day</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="fortnight-method" class="method-detail method-alias">
+        <a name="M000075"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">fortnight</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Alias for <a href="Numeric.html#M000074">fortnights</a>
+</p>
+          
+
+          
+        </div>
+
+        
+      </div>
+
+    
+      <div id="fortnights-method" class="method-detail ">
+        <a name="M000074"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">fortnights</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Converts fortnights into seconds. (A fortnight is 2 weeks)
+</p>
+          
+
+          
+          <div class="method-source-code"
+            id="fortnights-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 258</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">fortnights</span> ; <span class="ruby-constant">Duration</span>[<span class="ruby-keyword kw">self</span> <span class="ruby-operator">*</span> <span class="ruby-value">1209600</span>] ; <span class="ruby-keyword kw">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="Numeric.html#M000075">fortnight</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="hour-method" class="method-detail method-alias">
+        <a name="M000065"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">hour</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Alias for <a href="Numeric.html#M000061">hours</a>
+</p>
+          
+
+          
+        </div>
+
+        
+      </div>
+
+    
+      <div id="hours-method" class="method-detail ">
+        <a name="M000061"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">hours</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Converts hours into seconds.
+</p>
+          
+
+          
+          <div class="method-source-code"
+            id="hours-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 244</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">hours</span> ; <span class="ruby-constant">Duration</span>[<span class="ruby-keyword kw">self</span> <span class="ruby-operator">*</span> <span class="ruby-value">3600</span>] ; <span class="ruby-keyword kw">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="Numeric.html#M000065">hour</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="minute-method" class="method-detail method-alias">
+        <a name="M000060"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">minute</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Alias for <a href="Numeric.html#M000059">minutes</a>
+</p>
+          
+
+          
+        </div>
+
+        
+      </div>
+
+    
+      <div id="minutes-method" class="method-detail ">
+        <a name="M000059"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">minutes</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Converts minutes into seconds.
+</p>
+          
+
+          
+          <div class="method-source-code"
+            id="minutes-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 240</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">minutes</span> ; <span class="ruby-constant">Duration</span>[<span class="ruby-keyword kw">self</span> <span class="ruby-operator">*</span> <span class="ruby-value">60</span>] ; <span class="ruby-keyword kw">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="Numeric.html#M000060">minute</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="month-method" class="method-detail method-alias">
+        <a name="M000077"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">month</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Alias for <a href="Numeric.html#M000076">months</a>
+</p>
+          
+
+          
+        </div>
+
+        
+      </div>
+
+    
+      <div id="months-method" class="method-detail ">
+        <a name="M000076"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">months</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Converts months into seconds. WARNING: This is not exact as it assumes 30
+days to a month.
+</p>
+          
+
+          
+          <div class="method-source-code"
+            id="months-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 263</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">months</span> ; <span class="ruby-constant">Duration</span>[<span class="ruby-keyword kw">self</span> <span class="ruby-operator">*</span> <span class="ruby-value">30</span> <span class="ruby-operator">*</span> <span class="ruby-value">86400</span>] ; <span class="ruby-keyword kw">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="Numeric.html#M000077">month</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="second-method" class="method-detail method-alias">
+        <a name="M000058"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">second</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Alias for <a href="Numeric.html#M000057">seconds</a>
+</p>
+          
+
+          
+        </div>
+
+        
+      </div>
+
+    
+      <div id="seconds-method" class="method-detail ">
+        <a name="M000057"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">seconds</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Enables the use of time calculations and declarations, like 45.minutes +
+2.hours + 4.years. The base unit for all of these <a
+href="Numeric.html">Numeric</a> time methods is seconds.
+</p>
+          
+
+          
+          <div class="method-source-code"
+            id="seconds-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 236</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">seconds</span> ; <span class="ruby-constant">Duration</span>[<span class="ruby-keyword kw">self</span>] ; <span class="ruby-keyword kw">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="Numeric.html#M000058">second</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="week-method" class="method-detail method-alias">
+        <a name="M000073"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">week</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Alias for <a href="Numeric.html#M000068">weeks</a>
+</p>
+          
+
+          
+        </div>
+
+        
+      </div>
+
+    
+      <div id="weeks-method" class="method-detail ">
+        <a name="M000068"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">weeks</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Converts weeks into seconds.
+</p>
+          
+
+          
+          <div class="method-source-code"
+            id="weeks-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 253</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">weeks</span> ; <span class="ruby-constant">Duration</span>[<span class="ruby-keyword kw">self</span> <span class="ruby-operator">*</span> <span class="ruby-value">604800</span>] ; <span class="ruby-keyword kw">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="Numeric.html#M000073">week</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="year-method" class="method-detail method-alias">
+        <a name="M000079"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">year</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Alias for <a href="Numeric.html#M000078">years</a>
+</p>
+          
+
+          
+        </div>
+
+        
+      </div>
+
+    
+      <div id="years-method" class="method-detail ">
+        <a name="M000078"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">years</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Converts years into seconds. WARNING: This is not exact as it assumes 365
+days to a year.
+</p>
+<pre>
+         ie. It doesn not account for leap years.
+</pre>
+          
+
+          
+          <div class="method-source-code"
+            id="years-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 269</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">years</span> ; <span class="ruby-constant">Duration</span>[<span class="ruby-keyword kw">self</span> <span class="ruby-operator">*</span> <span class="ruby-value">365</span> <span class="ruby-operator">*</span> <span class="ruby-value">86400</span>, <span class="ruby-identifier">:years</span>] ; <span class="ruby-keyword kw">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+        <div class="aliases">
+          Also aliased as: <a href="Numeric.html#M000079">year</a>
+        </div>
+        
+      </div>
+
+    
+    </div>
+  
+
+  </div>
+
+
+  <div id="rdoc-debugging-section-dump" class="debugging-section">
+  
+    <p>Disabled; run with --debug to generate this.</p>
+  
+  </div>
+
+</main>
+</body>
+</html>
+
