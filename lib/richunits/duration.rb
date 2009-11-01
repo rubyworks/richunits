@@ -12,40 +12,51 @@ module RichUnits
 
     SEGMENTS = %w{years weeks days hours minutes seconds}.collect{ |s| s.to_sym }
 
+    # Same as #new
     #
-    def self.[](seconds, *segments)
-      new(seconds, *segments)
+    def self.[](seconds, segmentA=nil, segmentB=nil)
+      new(seconds, segmentA, segmentB)
     end
 
+    # New duration.
     #
-    def initialize(seconds=0, *segments)
+    #   call-seq:
+    #     new(seconds)
+    #     new(seconds, max-period)
+    #     new(seconds, max-period, min-period)
+    #     new(seconds, [period1, period2, ...])
+    #
+    def initialize(seconds=0, segmentA=nil, segmentB=nil)
       @seconds = seconds.to_i
-      reset_segments(*segments)
+      reset_segments(segmentA, segmentB)
     end
 
-    #
+    # List of period segments.
     def segments; @segments; end
 
+    # Reset segments.
     #
-    def reset_segments(*segments)
-      case segments.size
-      when 0
+    #   call-seq:
+    #     reset_segments(max-period)
+    #     reset_segments(max-period, min-period)
+    #     reset_segments([period1, period2, ...])
+    #
+    def reset_segments(segmentA=nil, segmentB=nil)
+      if !segmentA
         @segments = [:days, :hours, :minutes, :seconds]
-      when 1
-        case segments = segments[0]
+      elsif !segmentB
+        case segmentA
         when Array
-          @segments = segments.collect{ |p| (p.to_s.downcase.chomp('s') + 's').to_sym }
+          @segments = segmentA.map{ |p| (p.to_s.downcase.chomp('s') + 's').to_sym }
           raise ArgumentError unless @segments.all?{ |s| SEGMENTS.include?(s) }
         else
-          f = SEGMENTS.index(segments)
+          f = SEGMENTS.index(segmentA)
           @segments = SEGMENTS[f..0]
         end
-      when 2
-        f = SEGMENTS.index(segments[0])
-        t = SEGMENTS.index(segments[1])
+      else # segmentA && segmentB
+        f = SEGMENTS.index(segmentA)
+        t = SEGMENTS.index(segmentB)
         @segments = SEGMENTS[f..t]
-      else
-        raise ArgumentError
       end
     end
 
@@ -130,7 +141,7 @@ module RichUnits
       self.class.new(@seconds - other.to_i, segments)
     end
 
-    def +(other)
+    def *(other)
       self.class.new(@seconds * other.to_i, segments)
     end
 
