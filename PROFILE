@@ -1,0 +1,26 @@
+--- 
+title  : RichUnits
+suite  : rubyworks
+summary: Simple LCD Unit System
+contact: Trans <transfire@gmail.com>
+license: MIT
+created: 2008-02-21
+authors:
+  - Thomas Sawyer
+  - Rich Kilmer
+
+description:
+  Rich Kilmer's Unit system provides english-esque methods
+  for working with common units, such as days and bytes and
+  multiplers like kilo, or mega. It does so by reducing basic
+  measures to a lower common denominator, such as seconds for
+  time measures and bits for byte measures.
+
+resources:
+  homepage    : http://rubyworks.github.com/richunits
+  development : http://github.com/rubyworks/richunits
+  repository  : git://github.com/rubyworks/richunits.git
+
+copyright:
+  Copyright (c) 2008 Thomas Sawyer
+
