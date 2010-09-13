@@ -1,5 +1,4 @@
-name : richunits
-major: 0
-minor: 6
-patch: 0
-date : 2009-05-30
+name    : richunits
+date    : 2009-05-30
+version : 0.6.0
+

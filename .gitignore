@@ -1,6 +1,6 @@
 log
 pkg
-pack
-doc/rdoc
-doc/ri
-MANIFEST
+doc
+ri
+tmp
+site/docs

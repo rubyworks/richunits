@@ -1,3 +1,7 @@
+= Release History
+
+== 0.5.0 / 2009-05-30
+
 This release updates some extensions to Time for use with the
 Duration class, and standardizes the library on the name 'richunits',
 rather than using the underscored "rich_units". This means installation
@@ -14,8 +18,28 @@ Though a backward compatible require is still present.
 The previous release contains a complete rewrite of the Duration
 class and integrates it into the rest of the system.
 
-
-### 0.5.0 / 2009-05-30
+Changes:
 
 * Rewrote Duration class and integrated into rest of system.
+* Name of gem and main require will be 'richunits' (no underscore).
+
+
+== 0.4.0 / 2008-09-09
+
+* Rewrote Duration class and integrated into rest of system.
+
+
+== 0.3.0 / 2008-09-08
+
+* Encapsulated entire library in RichUnits module.
+
+
+== 0.2.0 / 2008-08-01
+
+* Reorganized repository.
+
+
+== 0.1.0 / 2008-03-27
+
+* Initial version.
 

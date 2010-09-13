@@ -1,4 +1,16 @@
 ---
+box:
+  service: Box
+  types  : [gem]
+
+rdoc:
+  exclude  : [Syckfile]
+  template : newfish
+  output   : site/docs/api
+
+testrb:
+  service: Testrb
+
 email:
   service : Email
   file    : ~
@@ -12,7 +24,6 @@ email:
   login   : ENV[EMAIL_LOGIN]
   secure  : ENV[EMAIL_SECURE]
   active  : true
-
   #service : Email
   #mailto  : ruby-talk@ruby-lang.org
   #from    : admin@tigerops.org

@@ -1,0 +1,18 @@
+#!mast -x Syckfile bin lib meta test [A-Z]*
+lib/rich_units.rb
+lib/richunits/bytes.rb
+lib/richunits/duration.rb
+lib/richunits/multipliers.rb
+lib/richunits/times.rb
+lib/richunits/weekdays.rb
+lib/richunits.rb
+test/test_bytes.rb
+test/test_duration.rb
+test/test_multipliers.rb
+test/test_times.rb
+PROFILE
+TODO
+README
+HISTORY
+VERSION
+COPYING
