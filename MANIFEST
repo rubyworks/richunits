@@ -1,18 +1,19 @@
-#!mast -x Syckfile bin lib meta test [A-Z]*
+#!mast -x Syckfile bin lib meta spec [A-Z]*
 lib/rich_units.rb
 lib/richunits/bytes.rb
 lib/richunits/duration.rb
 lib/richunits/multipliers.rb
 lib/richunits/times.rb
+lib/richunits/version.yml
 lib/richunits/weekdays.rb
 lib/richunits.rb
-test/test_bytes.rb
-test/test_duration.rb
-test/test_multipliers.rb
-test/test_times.rb
+spec/bytes_spec.rb
+spec/duration_spec.rb
+spec/multipliers_spec.rb
+spec/times_spec.rb
+Rakefile
+HISTORY.rdoc
 PROFILE
-TODO
-README
-HISTORY
+README.rdoc
 VERSION
 COPYING
