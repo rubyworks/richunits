@@ -17,9 +17,9 @@ description:
   time measures and bits for byte measures.
 
 resources:
-  homepage    : http://rubyworks.github.com/richunits
-  development : http://github.com/rubyworks/richunits
-  repository  : git://github.com/rubyworks/richunits.git
+  home: http://rubyworks.github.com/richunits
+  code: http://github.com/rubyworks/richunits
+  repo: git://github.com/rubyworks/richunits.git
 
 copyright:
   Copyright (c) 2008 Thomas Sawyer

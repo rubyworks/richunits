@@ -2,3 +2,5 @@ name    : richunits
 date    : 2009-05-30
 version : 0.6.0
 
+requires:
+  - syckle (build)
