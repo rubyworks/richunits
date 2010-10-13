@@ -2,7 +2,7 @@
 
 Easy Units for Ruby
 
-* http://rubyworks.github.com/richunits/
+* http://rubyworks.github.com/richunits
 * http://richunits.rubyforge.org/ (old site)
 
 
