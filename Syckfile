@@ -11,8 +11,13 @@ rdoc:
   template : newfish
   output   : site/docs/api
 
-testrb:
-  service: testrb
+# MiniTest Forking Sucks!
+
+test:
+  service: custom
+  cycle  : main
+  test: |
+    system "rspec -Ilib spec/"
 
 email:
   service : email
