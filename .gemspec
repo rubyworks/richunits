@@ -1,13 +1,13 @@
 --- !ruby/object:Gem::Specification 
 name: richunits
 version: !ruby/object:Gem::Version 
-  hash: 7
+  hash: 5
   prerelease: false
   segments: 
   - 0
   - 6
-  - 0
-  version: 0.6.0
+  - 1
+  version: 0.6.1
 platform: ruby
 authors: 
 - Thomas Sawyer
@@ -33,7 +33,21 @@ dependencies:
         version: "0"
   type: :development
   version_requirements: *id001
-description: Rich Kilmer's Unit system provides english-esque methods for working with common units, such as days and bytes and multiplers like kilo, or mega. It does so by reducing basic measures to a lower common denominator, such as seconds for time measures and bits for byte measures.
+- !ruby/object:Gem::Dependency 
+  name: rspec
+  prerelease: false
+  requirement: &id002 !ruby/object:Gem::Requirement 
+    none: false
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        hash: 3
+        segments: 
+        - 0
+        version: "0"
+  type: :development
+  version_requirements: *id002
+description: A Unit system, based on Rich Kilmer's original time.rb work, which provides english-esque methods for working with common units, such as days and bytes and multiplers like kilo, or mega. It does so by reducing basic measures to a lower common denominator, such as seconds for time measures and bits for byte measures.
 email: transfire@gmail.com
 executables: []
 
