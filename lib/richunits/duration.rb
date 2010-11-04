@@ -70,6 +70,8 @@ module RichUnits
     def to_i ; @seconds.to_i ; end
     def to_f ; @seconds.to_f ; end
 
+    alias_method :to_int, :to_i
+
     public
 
     def to_a

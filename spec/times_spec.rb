@@ -1,6 +1,6 @@
 require 'richunits/times'
 
-describe "times" do
+describe "RichUnits::Times" do
 
   #it "micro_seconds
   #  1.microsecond.should == 0.000001
