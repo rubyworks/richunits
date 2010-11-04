@@ -1,6 +1,7 @@
 name    : richunits
-date    : 2009-05-30
-version : 0.6.0
+date    : 2010-10-04
+version : 0.6.1
 
 requires:
   - syckle (build)
+  - rpsec  (test)

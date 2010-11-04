@@ -1,5 +1,28 @@
 = Release History
 
+== 0.6.1 / 2010-10-04
+
+Minor release simply add #to_int method to Duration so Time#+
+and Time#- will work with Durations in Ruby 1.9.2 (Ruby 1.8.x
+uses #to_f).
+
+Changes:
+
+* Add Duration#to_int for Ruby 1.9.2.
+
+
+== 0.6.0 / 2009-10-31
+
+This release tightens up the Duration interface a bit and fixed the
+`Duration#*` method which was accidently named `#+`.
+
+Changes:
+
+* More robust interface for Duration class.
+* Rename #+ method to #* (typo).
+* Update metadata for Gem Do POM.
+
+
 == 0.5.0 / 2009-05-30
 
 This release updates some extensions to Time for use with the
