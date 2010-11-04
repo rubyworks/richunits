@@ -4,4 +4,4 @@ version : 0.6.1
 
 requires:
   - syckle (build)
-  - rpsec  (test)
+  - rspec  (test)
