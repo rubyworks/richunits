@@ -1,3 +1,4 @@
+require 'richunits/version'
 require 'richunits/multipliers'
 require 'richunits/bytes'
 require 'richunits/times'

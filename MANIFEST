@@ -1,9 +1,10 @@
-#!mast -x Syckfile bin lib meta spec [A-Z]*
+#!mast -x Syckfile bin lib spec [A-Z]*
 lib/rich_units.rb
 lib/richunits/bytes.rb
 lib/richunits/duration.rb
 lib/richunits/multipliers.rb
 lib/richunits/times.rb
+lib/richunits/version.rb
 lib/richunits/version.yml
 lib/richunits/weekdays.rb
 lib/richunits.rb
