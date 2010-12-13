@@ -1,11 +1,11 @@
-#!mast -x Syckfile bin lib spec [A-Z]*
+#!mast -x Syckfile -x PROFILE .ruby bin lib spec test [A-Z]*
+.ruby
 lib/rich_units.rb
 lib/richunits/bytes.rb
 lib/richunits/duration.rb
 lib/richunits/multipliers.rb
 lib/richunits/times.rb
 lib/richunits/version.rb
-lib/richunits/version.yml
 lib/richunits/weekdays.rb
 lib/richunits.rb
 spec/bytes_spec.rb
@@ -14,7 +14,6 @@ spec/multipliers_spec.rb
 spec/times_spec.rb
 Rakefile
 HISTORY.rdoc
-PROFILE
 README.rdoc
 VERSION
 COPYING

@@ -1,7 +1,1 @@
-name    : richunits
-date    : 2010-10-04
-version : 0.6.1
-
-requires:
-  - syckle (build)
-  - rspec  (test)
+0.6.1

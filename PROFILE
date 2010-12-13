@@ -1,13 +1,13 @@
 --- 
 title  : RichUnits
-suite  : rubyworks
 summary: Simple LCD Unit System
 contact: Trans <transfire@gmail.com>
 license: MIT
 created: 2008-02-21
-authors:
-  - Thomas Sawyer
-  - Rich Kilmer
+
+requires:
+  - syckle (build)
+  - rspec  (test)
 
 description:
   A Unit system, based on Rich Kilmer's original time.rb work,
@@ -20,6 +20,12 @@ resources:
   home: http://rubyworks.github.com/richunits
   code: http://github.com/rubyworks/richunits
   repo: git://github.com/rubyworks/richunits.git
+
+authors:
+  - Thomas Sawyer
+  - Rich Kilmer
+
+organization: RubyWorks
 
 copyright:
   Copyright (c) 2008 Thomas Sawyer
