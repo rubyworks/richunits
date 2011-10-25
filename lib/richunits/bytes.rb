@@ -136,5 +136,3 @@ end#module RichUnits
 class Numeric #:nodoc:
   include RichUnits::Bytes::Numeric
 end
-
-# Copyright (c) 2008 Thomas Sawyer, Rubyworks (BSD-2-Clause)

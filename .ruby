@@ -5,7 +5,16 @@ authors:
 - name: Thomas Sawyer
   email: transfire@gmail.com
 - name: Rich Kilmer
-copyrights: []
+- name: Dave Hoover
+- name: Ryan Platte
+- name: George Moschovitis
+copyrights:
+- holder: Thomas Sawyer
+  year: '2008'
+  license: MIT
+- holder: Rich Kilmer
+  year: '2005'
+  license: Ruby
 replacements: []
 alternatives: []
 requirements:
@@ -34,7 +43,7 @@ revision: 0
 created: '2008-02-21'
 summary: Simple LCD Unit System
 title: RichUnits
-version: 0.6.1
+version: 0.6.2
 name: richunits
 description: ! 'A Unit system, based on Rich Kilmer''s original time.rb work, which
   provides

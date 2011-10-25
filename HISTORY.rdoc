@@ -24,7 +24,7 @@ Changes:
 == 0.6.0 / 2009-10-31
 
 This release tightens up the Duration interface a bit and fixed the
-`Duration#*` method which was accidently named `#+`.
+`Duration#*` method which was accidentally named `#+`.
 
 Changes:
 
@@ -59,20 +59,37 @@ Changes:
 
 == 0.4.0 / 2008-09-09
 
-* Rewrote Duration class and integrated into rest of system.
+This release includes a completely rewritten Duration class and integrates
+into the rest of the system.
+
+Changes:
+
+* Wrote new Duration class.
 
 
 == 0.3.0 / 2008-09-08
+
+This release adds RichUnits toplevel namespace.
+
+Changes:
 
 * Encapsulated entire library in RichUnits module.
 
 
 == 0.2.0 / 2008-08-01
 
+Continued work on RichUnits.
+
+Changes:
+
 * Reorganized repository.
 
 
 == 0.1.0 / 2008-03-27
+
+First release of RichUnits.
+
+Changes:
 
 * Initial version.
 

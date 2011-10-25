@@ -74,5 +74,3 @@ end#module RichUnits
 class Numeric #:nodoc:
   include RichUnits::Multiplers::Numeric
 end
-
-# Copyright (c) 2008 Thomas Sawyer, Rubyworks (BSD-2-Clause)
