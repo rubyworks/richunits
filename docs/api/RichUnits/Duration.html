@@ -219,6 +219,11 @@
           
             
             <li class="method">
+              <a href="#method-i-to_int">#to_int</a>
+            </li>
+          
+            
+            <li class="method">
               <a href="#method-i-to_s">#to_s</a>
             </li>
           
@@ -498,10 +503,10 @@ New duration.
           <div class="method-source-code"
             id="--source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 144</span>
-144:     <span class="ruby-keyword kw">def</span> *(<span class="ruby-identifier">other</span>)
-145:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@seconds</span> * <span class="ruby-identifier">other</span>.<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">segments</span>)
-146:     <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 146</span>
+146:     <span class="ruby-keyword kw">def</span> *(<span class="ruby-identifier">other</span>)
+147:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@seconds</span> * <span class="ruby-identifier">other</span>.<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">segments</span>)
+148:     <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -530,10 +535,10 @@ New duration.
           <div class="method-source-code"
             id="--source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 136</span>
-136:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">+</span>(<span class="ruby-identifier">other</span>)
-137:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@seconds</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">segments</span>)
-138:     <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 138</span>
+138:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">+</span>(<span class="ruby-identifier">other</span>)
+139:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@seconds</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">segments</span>)
+140:     <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -562,10 +567,10 @@ New duration.
           <div class="method-source-code"
             id="--source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 140</span>
-140:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">-</span>(<span class="ruby-identifier">other</span>)
-141:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@seconds</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">segments</span>)
-142:     <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 142</span>
+142:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">-</span>(<span class="ruby-identifier">other</span>)
+143:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@seconds</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">segments</span>)
+144:     <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -594,10 +599,10 @@ New duration.
           <div class="method-source-code"
             id="--source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 148</span>
-148:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">/</span>(<span class="ruby-identifier">other</span>)
-149:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@seconds</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">segments</span>)
-150:     <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 150</span>
+150:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">/</span>(<span class="ruby-identifier">other</span>)
+151:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@seconds</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">to_i</span>, <span class="ruby-identifier">segments</span>)
+152:     <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -626,10 +631,10 @@ New duration.
           <div class="method-source-code"
             id="--source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 115</span>
-115:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">&lt;=&gt;</span>(<span class="ruby-identifier">other</span>)
-116:       <span class="ruby-ivar">@seconds</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">to_i</span>
-117:     <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 117</span>
+117:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">&lt;=&gt;</span>(<span class="ruby-identifier">other</span>)
+118:       <span class="ruby-ivar">@seconds</span> <span class="ruby-operator">&lt;=&gt;</span> <span class="ruby-identifier">other</span>.<span class="ruby-identifier">to_i</span>
+119:     <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -662,14 +667,14 @@ if <tt>other == value</tt>.
           <div class="method-source-code"
             id="--source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 107</span>
-107:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">==</span>(<span class="ruby-identifier">other</span>)
-108:       <span class="ruby-keyword kw">if</span> <span class="ruby-constant">Duration</span> <span class="ruby-operator">===</span> <span class="ruby-identifier">other</span>
-109:         <span class="ruby-identifier">other</span>.<span class="ruby-identifier">seconds</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">seconds</span>
-110:       <span class="ruby-keyword kw">else</span>
-111:         <span class="ruby-identifier">other</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">seconds</span>
-112:       <span class="ruby-keyword kw">end</span>
-113:     <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 109</span>
+109:     <span class="ruby-keyword kw">def</span> <span class="ruby-operator">==</span>(<span class="ruby-identifier">other</span>)
+110:       <span class="ruby-keyword kw">if</span> <span class="ruby-constant">Duration</span> <span class="ruby-operator">===</span> <span class="ruby-identifier">other</span>
+111:         <span class="ruby-identifier">other</span>.<span class="ruby-identifier">seconds</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">seconds</span>
+112:       <span class="ruby-keyword kw">else</span>
+113:         <span class="ruby-identifier">other</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">seconds</span>
+114:       <span class="ruby-keyword kw">end</span>
+115:     <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -698,10 +703,10 @@ if <tt>other == value</tt>.
           <div class="method-source-code"
             id="after-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 224</span>
-224:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">after</span>(<span class="ruby-identifier">time</span>)
-225:       <span class="ruby-ivar">@seconds</span>.<span class="ruby-identifier">after</span>(<span class="ruby-identifier">time</span>)
-226:     <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 226</span>
+226:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">after</span>(<span class="ruby-identifier">time</span>)
+227:       <span class="ruby-ivar">@seconds</span>.<span class="ruby-identifier">after</span>(<span class="ruby-identifier">time</span>)
+228:     <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -730,10 +735,10 @@ if <tt>other == value</tt>.
           <div class="method-source-code"
             id="before-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 219</span>
-219:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">before</span>(<span class="ruby-identifier">time</span>)
-220:       <span class="ruby-ivar">@seconds</span>.<span class="ruby-identifier">before</span>(<span class="ruby-identifier">time</span>)
-221:     <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 221</span>
+221:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">before</span>(<span class="ruby-identifier">time</span>)
+222:       <span class="ruby-ivar">@seconds</span>.<span class="ruby-identifier">before</span>(<span class="ruby-identifier">time</span>)
+223:     <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -762,8 +767,8 @@ if <tt>other == value</tt>.
           <div class="method-source-code"
             id="days-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 129</span>
-129:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">days</span>    ; <span class="ruby-identifier">to_h</span>[<span class="ruby-value">:days</span>]    ; <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 131</span>
+131:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">days</span>    ; <span class="ruby-identifier">to_h</span>[<span class="ruby-value">:days</span>]    ; <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -792,8 +797,8 @@ if <tt>other == value</tt>.
           <div class="method-source-code"
             id="hours-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 130</span>
-130:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">hours</span>   ; <span class="ruby-identifier">to_h</span>[<span class="ruby-value">:hours</span>]   ; <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 132</span>
+132:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">hours</span>   ; <span class="ruby-identifier">to_h</span>[<span class="ruby-value">:hours</span>]   ; <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -857,8 +862,8 @@ if <tt>other == value</tt>.
           <div class="method-source-code"
             id="minutes-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 131</span>
-131:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">minutes</span> ; <span class="ruby-identifier">to_h</span>[<span class="ruby-value">:minutes</span>] ; <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 133</span>
+133:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">minutes</span> ; <span class="ruby-identifier">to_h</span>[<span class="ruby-value">:minutes</span>] ; <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -937,8 +942,8 @@ Reset segments.
           <div class="method-source-code"
             id="seconds-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 132</span>
-132:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">seconds</span> ; <span class="ruby-identifier">to_h</span>[<span class="ruby-value">:seconds</span>] ; <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 134</span>
+134:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">seconds</span> ; <span class="ruby-identifier">to_h</span>[<span class="ruby-value">:seconds</span>] ; <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -967,20 +972,20 @@ Reset segments.
           <div class="method-source-code"
             id="segmented-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 153</span>
-153:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">segmented</span>(*<span class="ruby-identifier">segments</span>)
-154:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@seconds</span>, <span class="ruby-identifier">segments</span>)
-155:       <span class="ruby-comment cmt">#segments = segments.collect{ |p| p.to_s.downcase.chomp('s') }</span>
-156:       <span class="ruby-comment cmt">#y,w,d,h,m,s = nil,nil,nil,nil,nil,nil</span>
-157:       <span class="ruby-comment cmt">#x = @seconds</span>
-158:       <span class="ruby-comment cmt">#y, x = *x.divmod(YEAR)   if segments.include?('year')</span>
-159:       <span class="ruby-comment cmt">#w, x = *x.divmod(WEEK)   if segments.include?('week')</span>
-160:       <span class="ruby-comment cmt">#d, x = *x.divmod(DAY)    if segments.include?('day')</span>
-161:       <span class="ruby-comment cmt">#h, x = *x.divmod(HOUR)   if segments.include?('hour')</span>
-162:       <span class="ruby-comment cmt">#m, x = *x.divmod(MINUTE) if segments.include?('minute')</span>
-163:       <span class="ruby-comment cmt">#s = x if segments.include?('second')</span>
-164:       <span class="ruby-comment cmt">#[y, w, d, h, m, s].compact</span>
-165:     <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 155</span>
+155:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">segmented</span>(*<span class="ruby-identifier">segments</span>)
+156:       <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">class</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@seconds</span>, <span class="ruby-identifier">segments</span>)
+157:       <span class="ruby-comment cmt">#segments = segments.collect{ |p| p.to_s.downcase.chomp('s') }</span>
+158:       <span class="ruby-comment cmt">#y,w,d,h,m,s = nil,nil,nil,nil,nil,nil</span>
+159:       <span class="ruby-comment cmt">#x = @seconds</span>
+160:       <span class="ruby-comment cmt">#y, x = *x.divmod(YEAR)   if segments.include?('year')</span>
+161:       <span class="ruby-comment cmt">#w, x = *x.divmod(WEEK)   if segments.include?('week')</span>
+162:       <span class="ruby-comment cmt">#d, x = *x.divmod(DAY)    if segments.include?('day')</span>
+163:       <span class="ruby-comment cmt">#h, x = *x.divmod(HOUR)   if segments.include?('hour')</span>
+164:       <span class="ruby-comment cmt">#m, x = *x.divmod(MINUTE) if segments.include?('minute')</span>
+165:       <span class="ruby-comment cmt">#s = x if segments.include?('second')</span>
+166:       <span class="ruby-comment cmt">#[y, w, d, h, m, s].compact</span>
+167:     <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -1064,23 +1069,23 @@ Format duration.
           <div class="method-source-code"
             id="strftime-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 187</span>
-187:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">strftime</span>(<span class="ruby-identifier">fmt</span>)
-188:       <span class="ruby-identifier">h</span> = <span class="ruby-identifier">to_h</span>
-189:       <span class="ruby-identifier">hx</span> = {
-190:        <span class="ruby-value str">'y'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">h</span>[<span class="ruby-value">:years</span>]  ,
-191:        <span class="ruby-value str">'w'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">h</span>[<span class="ruby-value">:weeks</span>]  ,
-192:        <span class="ruby-value str">'d'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">h</span>[<span class="ruby-value">:days</span>]   ,
-193:        <span class="ruby-value str">'h'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">h</span>[<span class="ruby-value">:hours</span>]  ,
-194:        <span class="ruby-value str">'m'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">h</span>[<span class="ruby-value">:minutes</span>],
-195:        <span class="ruby-value str">'s'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">h</span>[<span class="ruby-value">:seconds</span>],
-196:        <span class="ruby-value str">'t'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">total</span>,
-197:        <span class="ruby-value str">'x'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">to_s</span> 
-198:       }
-199:       <span class="ruby-identifier">fmt</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp re">/%?%(w|d|h|m|s|t|x)/</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">match</span><span class="ruby-operator">|</span>
-200:         <span class="ruby-identifier">hx</span>[<span class="ruby-identifier">match</span>[<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">1</span>]]
-201:       <span class="ruby-keyword kw">end</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-value str">'%%'</span>, <span class="ruby-value str">'%'</span>)
-202:     <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 189</span>
+189:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">strftime</span>(<span class="ruby-identifier">fmt</span>)
+190:       <span class="ruby-identifier">h</span> = <span class="ruby-identifier">to_h</span>
+191:       <span class="ruby-identifier">hx</span> = {
+192:        <span class="ruby-value str">'y'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">h</span>[<span class="ruby-value">:years</span>]  ,
+193:        <span class="ruby-value str">'w'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">h</span>[<span class="ruby-value">:weeks</span>]  ,
+194:        <span class="ruby-value str">'d'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">h</span>[<span class="ruby-value">:days</span>]   ,
+195:        <span class="ruby-value str">'h'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">h</span>[<span class="ruby-value">:hours</span>]  ,
+196:        <span class="ruby-value str">'m'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">h</span>[<span class="ruby-value">:minutes</span>],
+197:        <span class="ruby-value str">'s'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">h</span>[<span class="ruby-value">:seconds</span>],
+198:        <span class="ruby-value str">'t'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">total</span>,
+199:        <span class="ruby-value str">'x'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">to_s</span> 
+200:       }
+201:       <span class="ruby-identifier">fmt</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp re">/%?%(w|d|h|m|s|t|x)/</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">match</span><span class="ruby-operator">|</span>
+202:         <span class="ruby-identifier">hx</span>[<span class="ruby-identifier">match</span>[<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">1</span>]]
+203:       <span class="ruby-keyword kw">end</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-value str">'%%'</span>, <span class="ruby-value str">'%'</span>)
+204:     <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -1109,17 +1114,17 @@ Format duration.
           <div class="method-source-code"
             id="to-a-source">
 <pre>
-    <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 75</span>
-75:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_a</span>
-76:       <span class="ruby-identifier">a</span>, <span class="ruby-identifier">s</span> = [], <span class="ruby-ivar">@seconds</span>
-77:       <span class="ruby-identifier">a</span>[<span class="ruby-value">5</span>], <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">YEAR</span>)   <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:years</span>)
-78:       <span class="ruby-identifier">a</span>[<span class="ruby-value">4</span>], <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">WEEK</span>)   <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:weeks</span>)
-79:       <span class="ruby-identifier">a</span>[<span class="ruby-value">3</span>], <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">DAY</span>)    <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:days</span>)
-80:       <span class="ruby-identifier">a</span>[<span class="ruby-value">2</span>], <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">HOUR</span>)   <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:hours</span>)
-81:       <span class="ruby-identifier">a</span>[<span class="ruby-value">1</span>], <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">MINUTE</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:minutes</span>)
-82:       <span class="ruby-identifier">a</span>[<span class="ruby-value">0</span>], <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">SECOND</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:seconds</span>)
-83:       <span class="ruby-identifier">a</span>.<span class="ruby-identifier">compact</span>.<span class="ruby-identifier">reverse</span>
-84:     <span class="ruby-keyword kw">end</span></pre>
+    <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 77</span>
+77:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_a</span>
+78:       <span class="ruby-identifier">a</span>, <span class="ruby-identifier">s</span> = [], <span class="ruby-ivar">@seconds</span>
+79:       <span class="ruby-identifier">a</span>[<span class="ruby-value">5</span>], <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">YEAR</span>)   <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:years</span>)
+80:       <span class="ruby-identifier">a</span>[<span class="ruby-value">4</span>], <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">WEEK</span>)   <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:weeks</span>)
+81:       <span class="ruby-identifier">a</span>[<span class="ruby-value">3</span>], <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">DAY</span>)    <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:days</span>)
+82:       <span class="ruby-identifier">a</span>[<span class="ruby-value">2</span>], <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">HOUR</span>)   <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:hours</span>)
+83:       <span class="ruby-identifier">a</span>[<span class="ruby-value">1</span>], <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">MINUTE</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:minutes</span>)
+84:       <span class="ruby-identifier">a</span>[<span class="ruby-value">0</span>], <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">SECOND</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:seconds</span>)
+85:       <span class="ruby-identifier">a</span>.<span class="ruby-identifier">compact</span>.<span class="ruby-identifier">reverse</span>
+86:     <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -1178,17 +1183,17 @@ Format duration.
           <div class="method-source-code"
             id="to-h-source">
 <pre>
-    <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 87</span>
-87:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_h</span>
-88:       <span class="ruby-identifier">h</span>, <span class="ruby-identifier">s</span> = {}, <span class="ruby-ivar">@seconds</span>
-89:       <span class="ruby-identifier">h</span>[<span class="ruby-value">:years</span>],   <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">YEAR</span>)   <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:years</span>)
-90:       <span class="ruby-identifier">h</span>[<span class="ruby-value">:weeks</span>],   <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">WEEK</span>)   <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:weeks</span>)
-91:       <span class="ruby-identifier">h</span>[<span class="ruby-value">:days</span>],    <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">DAY</span>)    <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:days</span>)
-92:       <span class="ruby-identifier">h</span>[<span class="ruby-value">:hours</span>],   <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">HOUR</span>)   <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:hours</span>)
-93:       <span class="ruby-identifier">h</span>[<span class="ruby-value">:minutes</span>], <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">MINUTE</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:minutes</span>)
-94:       <span class="ruby-identifier">h</span>[<span class="ruby-value">:seconds</span>], <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">SECOND</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:seconds</span>)
-95:       <span class="ruby-identifier">h</span>
-96:     <span class="ruby-keyword kw">end</span></pre>
+    <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 89</span>
+89:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_h</span>
+90:       <span class="ruby-identifier">h</span>, <span class="ruby-identifier">s</span> = {}, <span class="ruby-ivar">@seconds</span>
+91:       <span class="ruby-identifier">h</span>[<span class="ruby-value">:years</span>],   <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">YEAR</span>)   <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:years</span>)
+92:       <span class="ruby-identifier">h</span>[<span class="ruby-value">:weeks</span>],   <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">WEEK</span>)   <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:weeks</span>)
+93:       <span class="ruby-identifier">h</span>[<span class="ruby-value">:days</span>],    <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">DAY</span>)    <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:days</span>)
+94:       <span class="ruby-identifier">h</span>[<span class="ruby-value">:hours</span>],   <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">HOUR</span>)   <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:hours</span>)
+95:       <span class="ruby-identifier">h</span>[<span class="ruby-value">:minutes</span>], <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">MINUTE</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:minutes</span>)
+96:       <span class="ruby-identifier">h</span>[<span class="ruby-value">:seconds</span>], <span class="ruby-identifier">s</span> = *<span class="ruby-identifier">s</span>.<span class="ruby-identifier">divmod</span>(<span class="ruby-constant">SECOND</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@segments</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-value">:seconds</span>)
+97:       <span class="ruby-identifier">h</span>
+98:     <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -1224,6 +1229,33 @@ Format duration.
         </div>
 
         
+        <div class="aliases">
+          Also aliased as: <a href="Duration.html#method-i-to_int">to_int</a>
+        </div>
+        
+      </div>
+
+    
+      <div id="to-int-method" class="method-detail method-alias">
+        <a name="method-i-to_int"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">to_int</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          
+          
+
+          
+        </div>
+
+        
       </div>
 
     
@@ -1247,13 +1279,13 @@ Format duration.
           <div class="method-source-code"
             id="to-s-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 98</span>
- 98:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_s</span>
- 99:       <span class="ruby-identifier">h</span> = <span class="ruby-identifier">to_h</span>
-100:       <span class="ruby-identifier">segments</span>.<span class="ruby-identifier">reverse</span>.<span class="ruby-identifier">collect</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span>
-101:         <span class="ruby-node">&quot;#{h[l.to_sym]} #{l}&quot;</span>
-102:       <span class="ruby-keyword kw">end</span>.<span class="ruby-identifier">join</span>(<span class="ruby-value str">' '</span>)
-103:     <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 100</span>
+100:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to_s</span>
+101:       <span class="ruby-identifier">h</span> = <span class="ruby-identifier">to_h</span>
+102:       <span class="ruby-identifier">segments</span>.<span class="ruby-identifier">reverse</span>.<span class="ruby-identifier">collect</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span>
+103:         <span class="ruby-node">&quot;#{h[l.to_sym]} #{l}&quot;</span>
+104:       <span class="ruby-keyword kw">end</span>.<span class="ruby-identifier">join</span>(<span class="ruby-value str">' '</span>)
+105:     <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -1282,8 +1314,8 @@ Format duration.
           <div class="method-source-code"
             id="total-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 134</span>
-134:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">total</span> ; <span class="ruby-identifier">seconds</span> ; <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 136</span>
+136:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">total</span> ; <span class="ruby-identifier">seconds</span> ; <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -1312,8 +1344,8 @@ Format duration.
           <div class="method-source-code"
             id="weeks-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 128</span>
-128:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">weeks</span>   ; <span class="ruby-identifier">to_h</span>[<span class="ruby-value">:weeks</span>]   ; <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 130</span>
+130:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">weeks</span>   ; <span class="ruby-identifier">to_h</span>[<span class="ruby-value">:weeks</span>]   ; <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
@@ -1350,8 +1382,8 @@ end
           <div class="method-source-code"
             id="years-source">
 <pre>
-     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 127</span>
-127:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">years</span>   ; <span class="ruby-identifier">to_h</span>[<span class="ruby-value">:years</span>]   ; <span class="ruby-keyword kw">end</span></pre>
+     <span class="ruby-comment cmt"># File lib/richunits/duration.rb, line 129</span>
+129:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">years</span>   ; <span class="ruby-identifier">to_h</span>[<span class="ruby-value">:years</span>]   ; <span class="ruby-keyword kw">end</span></pre>
           </div>
           
         </div>
