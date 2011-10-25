@@ -1,5 +1,15 @@
 = Release History
 
+== 0.6.2 / 2011-10-24
+
+A simple maintenance release to bring the project's build configuration
+up to date with more modern tools.
+
+Changes:
+
+* Modernize build configuration.
+
+
 == 0.6.1 / 2010-10-04
 
 Minor release simply add #to_int method to Duration so Time#+
