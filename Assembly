@@ -1,0 +1,15 @@
+---
+github:
+  active: true
+
+gem:
+  active: true
+
+rspec:
+  files: spec
+
+email:
+  mailto  :
+    - ruby-talk@ruby-lang.org
+    - rubyworks-mailinglist@googlegroups.com
+

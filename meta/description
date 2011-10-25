@@ -1,0 +1,5 @@
+A Unit system, based on Rich Kilmer's original time.rb work, which provides
+english-esque methods for working with common units, such as days and bytes
+and multiplers like kilo, or mega. It does so by reducing basic measures to
+a lower common denominator, such as seconds for time measures and bits for
+byte measures.

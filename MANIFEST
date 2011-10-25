@@ -1,4 +1,4 @@
-#!mast -x Syckfile -x PROFILE .ruby bin lib spec test [A-Z]*
+#!mast .ruby .yardopts bin lib man spec test [A-Z]*.*
 .ruby
 lib/rich_units.rb
 lib/richunits/bytes.rb
@@ -12,8 +12,6 @@ spec/bytes_spec.rb
 spec/duration_spec.rb
 spec/multipliers_spec.rb
 spec/times_spec.rb
-Rakefile
 HISTORY.rdoc
+LICENSE.txt
 README.rdoc
-VERSION
-COPYING
