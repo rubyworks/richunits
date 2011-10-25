@@ -1,46 +1,14 @@
-# Copyright (c) 2005 Rich Kilmer, Thomas Sawyer
-#
-# Ruby License
-#
-# This module is free software. You may use, modify, and/or redistribute this
-# software under the same terms as Ruby.
-#
-# This program is distributed in the hope that it will be useful, but WITHOUT
-# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
-# FITNESS FOR A PARTICULAR PURPOSE.
-#
-# HISTORY:
-#
-#   Thanks to Richard Kilmer for the orignal work and Alexander Kellett
-#   for suggesting it for Facets.
-#
-#   Thanks to Dave Hoover and Ryan Platte for the Weekdays implementation.
-#
-# AUTHORS:
-#
-#   - Rich Kilmer
-#   - Thomas Sawyer
-#   - Dave Hoover
-#   - Ryan Platte
-#   - George Moschovitis
-#
-# NOTES:
-#
-#   - This library is not compatible with STICK's units.rb (an spin-off
-#     of Facets old units.rb library). Do not attempt to use both at the same time.
-#
-# TODOs:
-#
-#   TODO Extra Add in_* methods, like in_days, in_hours, etc. ?
-
-#
 module RichUnits
   require 'richunits/weekdays'
   require 'richunits/duration'
 
+  # TODO: Extra Add in_* methods, like in_days, in_hours, etc. ?
+
   # = Times
   #
   # Plain-English convenience methods for dealing with dates and times.
+  #
+  # Thanks to Richard Kilmer for the orignal work version this work is based upon.
   #
   module Times
 

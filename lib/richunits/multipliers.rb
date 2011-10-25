@@ -1,45 +1,9 @@
-# TITLE:
-#
-#   Multipliers
-#
-# DESCRIPTION:
-#
-#   Adds methods to Numeric to make working with
-#   magnitudes (kilo, mega, giga, milli, micro, etc.)
-#   as well as bits and bytes easier.
-#
-# COPYRIGHT:
-#
-#   Copyright (c) 2005 Thomas Sawyer
-#
-# LICENSE:
-#
-#   Ruby License
-#
-#   This module is free software. You may use, modify, and/or redistribute this
-#   software under the same terms as Ruby.
-#
-#   This program is distributed in the hope that it will be useful, but WITHOUT
-#   ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-#   FOR A PARTICULAR PURPOSE.
-#
-# HISTORY:
-#
-#   Thanks to Rich Kilmer and bytes.rb which inspired this library.
-#
-# AUTHORS:
-#
-#   - Thomas Sawyer
-#
-# NOTES:
-#
-#   - This library is not compatible with STICK's units.rb (an spin-off
-#     of Facets old units.rb library). Do not attempt to use both at the same time.
-
-#
 module RichUnits
 
   # = Multipliers
+  #
+  #   Adds methods to Numeric to make working with  magnitudes
+  #   such as (kilo, mega, giga, milli, micro, etc.).
   #
   module Multiplers
 
@@ -111,3 +75,4 @@ class Numeric #:nodoc:
   include RichUnits::Multiplers::Numeric
 end
 
+# Copyright (c) 2008 Thomas Sawyer, Rubyworks (BSD-2-Clause)

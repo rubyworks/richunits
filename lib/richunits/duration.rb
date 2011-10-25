@@ -1,5 +1,6 @@
 module RichUnits
 
+  #
   class Duration
     include Comparable
 

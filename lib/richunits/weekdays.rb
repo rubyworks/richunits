@@ -3,7 +3,9 @@ module RichUnits
   # = Weekdays
   #
   # The Weekdays class provides useful weekday terminology.
-
+  #
+  # Thanks to Dave Hoover and Ryan Platte for the Weekdays implementation.
+  #
   class Weekdays
 
     WEEKDAYS = 1..5 # Monday is wday 1

@@ -1,58 +1,19 @@
-# TITLE:
-#
-#   Bytes
-#
-# DESCRIPTION:
-#
-#   Additional methods for Numeric class to make working with
-#   bits and bytes easier.
-#
-# COPYRIGHT:
-#
-#   Copyright (c) 2005 Rich Kilmer
-#
-# LICENSE:
-#
-#   Ruby License
-#
-#   This module is free software. You may use, modify, and/or redistribute this
-#   software under the same terms as Ruby.
-#
-#   This program is distributed in the hope that it will be useful, but WITHOUT
-#   ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-#   FOR A PARTICULAR PURPOSE.
-#
-# HISTORY:
-#
-#   Special thanks to Richard Kilmer for the orignal work.
-#   This library is based on the original library bytes.rb
-#   Copyright (c) 2004 by Rich Kilmer.
-#
-#   Also thanks to Alexander Kellett for suggesting it be
-#   included in Facets.
-#
-# AUTHORS:
-#
-#   - Rich Kilmer
-#   - Thomas Sawyer
-#
-# NOTES:
-#
-#   - This library is not compatible with STICK's units.rb (an spin-off
-#     of Facets old units.rb library). Do not attempt to use both at the same time.
-#
-# TODOs:
-#
-#   - Currently kilo, mega, etc. are all powers of two and not ten,
-#     which technically isn't corrent even though it is common usage.
-#
-#   - The in_* notation is weak. If a better nomentclature is thought
-#     of then consider changing this.
-
-#
 module RichUnits
 
+  # TODO: Currently kilo, mega, etc. are all powers of two and not ten,
+  # which technically isn't corrent even though it is common usage.
+  #
+  # TODO: The in_* notation is weak. If a better nomentclature is thought
+  # of then consider changing this.
+
   # = Binary Multipliers
+  #
+  # Additional methods for Numeric class to make working with
+  # bits and bytes easier.
+  #
+  # Special thanks to Richard Kilmer for the orignal work.
+  # This library is based on the original library bytes.rb
+  # Copyright (c) 2004 by Rich Kilmer.
   #
   module Bytes
 
@@ -176,3 +137,4 @@ class Numeric #:nodoc:
   include RichUnits::Bytes::Numeric
 end
 
+# Copyright (c) 2008 Thomas Sawyer, Rubyworks (BSD-2-Clause)
