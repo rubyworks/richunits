@@ -1,6 +1,7 @@
+.reap/digest
+.yardoc
 log
 pkg
 doc
-ri
 tmp
-site/docs
+web

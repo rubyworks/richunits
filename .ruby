@@ -1,6 +1,6 @@
 ---
 source:
-- meta
+- var
 authors:
 - name: Thomas Sawyer
   email: transfire@gmail.com
@@ -56,4 +56,4 @@ description: ! 'A Unit system, based on Rich Kilmer''s original time.rb work, wh
 
   byte measures.'
 organization: Rubyworks
-date: '2011-10-24'
+date: '2011-11-11'
