@@ -1,6 +1,6 @@
 # RichUnits
 
------
+## Easy Units for Ruby
 
 [![Gem Version](https://badge.fury.io/rb/richunits.png)](http://badge.fury.io/rb/richunits)
 [![Build Status](https://travis-ci.org/rubyworks/richunits.png)](https://travis-ci.org/rubyworks/richunits)
@@ -11,10 +11,8 @@
 [Source Code](http://github.com/rubyworks/richunits) &nbsp; &nbsp;
 [![Flattr Me](http://api.flattr.com/button/flattr-badge-large.png)](http://flattr.com/thing/324911/Rubyworks-Ruby-Development-Fund)
 
-***Easy Units for Ruby***
 
-
-## DESCRIPTION
+## About
 
 RichUnits is simple units system based on Rich Kilmer's original
 time.rb script, in which different measures of time are represented
@@ -30,7 +28,7 @@ as an attribute and adds an optional segements property which can be used to
 select exactly how to segment up the time period (years, week, days, etc.).
 
 
-## USAGE
+## Usage
 
 You only need to require 'richunits' and all of RichUnit's functionality
 becomes available.
@@ -42,7 +40,7 @@ becomes available.
 See RDocs for complete API documentation.
 
 
-## DEVELOPMENT
+## Development
 
 RichUnits utilizes GitHub for development. You will find the git 
 repo under the rubyworks account.
@@ -52,7 +50,7 @@ repo under the rubyworks account.
 RichUnits utilizes the Syckle build system.
 
 
-## COPYRIGHTS
+## Copyrights
 
 * Copyright (c) 2008 Thomas Sawyer
 * Copyright (c) 2006 Matthew Harris
