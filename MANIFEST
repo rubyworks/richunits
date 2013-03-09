@@ -1,5 +1,5 @@
 #!mast .index .yardopts bin lib man spec test *.txt *.md
-.ruby
+.index
 lib/rich_units.rb
 lib/richunits/bytes.rb
 lib/richunits/duration.rb
@@ -12,6 +12,6 @@ spec/bytes_spec.rb
 spec/duration_spec.rb
 spec/multipliers_spec.rb
 spec/times_spec.rb
-HISTORY.rdoc
 LICENSE.txt
-README.rdoc
+HISTORY.md
+README.md
