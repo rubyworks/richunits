@@ -6,7 +6,7 @@
 [Source Code](http://github.com/rubyworks/richunits)
 
 [![Gem Version](https://badge.fury.io/rb/richunits.png)](http://badge.fury.io/rb/richunits)
-[![Build Status](https://travis-ci.org/rubyworks/richunits.png)](https://travis-ci.org/rubyworks/richunits)
+[![Build Status](https://travis-ci.org/rubyworks/richunits.png)](https://travis-ci.org/rubyworks/richunits) &nbsp; &nbsp;
 [![Flattr Me](http://api.flattr.com/button/flattr-badge-large.png)](http://flattr.com/thing/324911/Rubyworks-Ruby-Development-Fund)
 
 
