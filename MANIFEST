@@ -1,4 +1,4 @@
-#!mast .ruby .yardopts bin lib man spec test [A-Z]*.*
+#!mast .index .yardopts bin lib man spec test *.txt *.md
 .ruby
 lib/rich_units.rb
 lib/richunits/bytes.rb

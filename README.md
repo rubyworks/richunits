@@ -1,13 +1,15 @@
-= RichUnits
+# RichUnits
 
 Easy Units for Ruby
 
-* http://rubyworks.github.com/richunits
+[Website](http://rubyworks.github.com/richunits) /
+[Documentation](http://rubydoc.info/gems/richunits/frames) /
+[Report Issue](http://github.com/rubyworks/richunits/issues) /
+[Source Code](http://github.com/rubyworks/richunits) &nbsp; &nbsp;
+[![Flattr Me](http://api.flattr.com/button/flattr-badge-large.png)](http://flattr.com/thing/324911/Rubyworks-Ruby-Development-Fund)
 
-{<img src="http://travis-ci.org/rubyworks/richunits.png" />}[http://travis-ci.org/rubyworks/richunits]
 
-
-== DESCRIPTION
+## DESCRIPTION
 
 RichUnits is simple units system based on Rich Kilmer's original
 time.rb script, in which different measures of time are represented
@@ -23,33 +25,39 @@ as an attribute and adds an optional segements property which can be used to
 select exactly how to segment up the time period (years, week, days, etc.).
 
 
-== SYNOPSIS
+## STATUS
+
+[![Gem Version](https://badge.fury.io/rb/richunits.png)](http://badge.fury.io/rb/richunits)
+[![Build Status](https://travis-ci.org/rubyworks/richunits.png)](https://travis-ci.org/rubyworks/richunits)
+
+
+## USAGE
 
 You only need to require 'richunits' and all of RichUnit's functionality
 becomes available.
 
-  require 'richunits'
+    require 'richunits'
 
-  2.hours  #=> 7200
+    2.hours  #=> 7200
 
 See RDocs for complete API documentation.
 
 
-== DEVELOPMENT
+## DEVELOPMENT
 
 RichUnits utilizes GitHub for development. You will find the git 
 repo under the rubyworks account.
 
-  git://github.com/rubyworks/richunits.git
+    git://github.com/rubyworks/richunits.git
 
 RichUnits utilizes the Syckle build system.
 
 
-== COPYRIGHTS
+## COPYRIGHTS
 
-Copyright (c) 2008 Thomas Sawyer
-Copyright (c) 2006 Matthew Harris
-Copyright (c) 2004 Rich Kilmer
+* Copyright (c) 2008 Thomas Sawyer
+* Copyright (c) 2006 Matthew Harris
+* Copyright (c) 2004 Rich Kilmer
 
 If you have contributed to this code and feel you deserve mention
 in the copyright notice, please let me know. Since this code has
@@ -61,4 +69,4 @@ to him.
 
 RichUnits is distributed under the terms of the MIT license.
 
-See COPYING.txt file.
+See LICENSE.txt file.
