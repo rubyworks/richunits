@@ -50,7 +50,7 @@ RichUnits utilizes the Syckle build system.
 
 ## Copyrights
 
-* Copyright (c) 2008 Thomas Sawyer
+* Copyright (c) 2008 Rubyworks
 * Copyright (c) 2006 Matthew Harris
 * Copyright (c) 2004 Rich Kilmer
 
